@@ -1,0 +1,38 @@
+{
+  "generation": 4,
+  "current_coupon_code": "MOCK-0004",
+  "issued_at": "2026-08-09T14:50:25.777465+09:00",
+  "reissue_date": "2026-08-09",
+  "reissue_count_today": 4,
+  "history": [
+    {
+      "generation": 1,
+      "coupon_code": "MOCK-0001",
+      "pc_get_url": "https://coupon.example/MOCK-0001",
+      "issued_at": "2026-08-09T14:50:25.765850+09:00",
+      "reason": "初回発行"
+    },
+    {
+      "generation": 2,
+      "coupon_code": "MOCK-0002",
+      "pc_get_url": "https://coupon.example/MOCK-0002",
+      "issued_at": "2026-08-09T14:50:25.769532+09:00",
+      "reason": "残0枚（閾値0）で使い切り"
+    },
+    {
+      "generation": 3,
+      "coupon_code": "MOCK-0003",
+      "pc_get_url": "https://coupon.example/MOCK-0003",
+      "issued_at": "2026-08-09T14:50:25.774141+09:00",
+      "reason": "残0枚（閾値0）で使い切り"
+    },
+    {
+      "generation": 4,
+      "coupon_code": "MOCK-0004",
+      "pc_get_url": "https://coupon.example/MOCK-0004",
+      "issued_at": "2026-08-09T14:50:25.777465+09:00",
+      "reason": "残0枚（閾値0）で使い切り"
+    }
+  ],
+  "current_pc_get_url": "https://coupon.example/MOCK-0004"
+}

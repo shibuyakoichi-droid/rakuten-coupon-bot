@@ -1,0 +1,61 @@
+{
+  "auth": {
+    "_comment": "RMS「WEB API」利用設定で取得。licenseKeyは90日で失効するので更新運用が必要。",
+    "service_secret": "ここにserviceSecretを入れる",
+    "license_key": "ここにlicenseKeyを入れる"
+  },
+
+  "coupon": {
+    "_comment_now": "◆現在＝お買い物マラソン用『3000円以上で100円OFF』。イベント後は下の _switch_back の値に差し替える。",
+    "coupon_name": "3000円以上ご購入で100円OFF",
+    "coupon_code_prefix": "M100",
+
+    "discount_type": 1,
+    "discount_factor": 100,
+
+    "condition_type": "amount",
+    "min_purchase_amount": 3000,
+    "min_purchase_count": 2,
+
+    "issue_count": 50,
+    "item_type": 4,
+    "validity_days": 7,
+    "start_buffer_minutes": 90,
+    "member_avail_max_count": 1,
+    "combine_flag": 0,
+    "display_flag": 1,
+    "target_item_urls": [],
+
+    "_comment_condition_code": "RS003=利用金額 / RS004=利用個数（coupon.issue仕様で確認済み）",
+    "amount_condition_type_code": "RS003",
+    "quantity_condition_type_code": "RS004",
+
+    "_switch_back": {
+      "_comment": "◆イベント終了後はこの4つを coupon 側に上書きすれば『2個以上で10%OFF』に戻る。",
+      "coupon_name": "2個以上ご購入で10%OFF",
+      "coupon_code_prefix": "B2G10",
+      "discount_type": 2,
+      "discount_factor": 10,
+      "condition_type": "quantity",
+      "item_type": 4
+    }
+  },
+
+  "automation": {
+    "_comment": "再発行の歯止め設定。",
+    "enabled": true,
+    "reissue_threshold": 0,
+    "max_reissue_per_day": 5,
+    "min_reissue_interval_minutes": 30
+  },
+
+  "notify": {
+    "_comment": "エラー時などのメール通知（任意）。使わない場合は enabled=false のままでOK。",
+    "enabled": false,
+    "smtp_host": "smtp.gmail.com",
+    "smtp_port": 587,
+    "smtp_user": "",
+    "smtp_password": "",
+    "to": "shibuya.koichi@gmail.com"
+  }
+}
