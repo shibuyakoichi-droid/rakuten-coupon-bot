@@ -1,0 +1,31 @@
+{
+  "generation": 4,
+  "current_coupon_code": "3WHV-B0Z9-UKCC-WIZP",
+  "issued_at": "2026-08-12T06:15:47.173889+09:00",
+  "reissue_date": "2026-08-12",
+  "reissue_count_today": 1,
+  "history": [
+    {
+      "generation": 2,
+      "coupon_code": "KMTD-X02T-0EE9-3DJE",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WDAyVC1LTVRELTBFRTktM0RKRQ--&rt=",
+      "issued_at": "2026-08-10T13:34:51.209383+09:00",
+      "reason": "残0枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 3,
+      "coupon_code": "PQCE-2F5K-MUXJ-XRIE",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=MkY1Sy1QUUNFLU1VWEotWFJJRQ--&rt=",
+      "issued_at": "2026-08-10T21:45:37.852293+09:00",
+      "reason": "残7枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 4,
+      "coupon_code": "3WHV-B0Z9-UKCC-WIZP",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=QjBaOS0zV0hWLVVLQ0MtV0laUA--&rt=",
+      "issued_at": "2026-08-12T06:15:47.173889+09:00",
+      "reason": "残0枚（閾値10）で使い切り"
+    }
+  ],
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=QjBaOS0zV0hWLVVLQ0MtV0laUA--&rt="
+}

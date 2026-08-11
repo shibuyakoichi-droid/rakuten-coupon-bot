@@ -17,6 +17,7 @@ import argparse
 import datetime
 import json
 import logging
+import os
 import smtplib
 import sys
 import time
@@ -27,6 +28,9 @@ from rakuten_client import RakutenCouponClient, RakutenApiError
 
 BASE_DIR = Path(__file__).parent
 CONFIG_PATH = BASE_DIR / "config.json"
+# クラウド(GitHub Actions)用の設定。秘密情報を含まない共有設定で、
+# config.json が無いときはこちらを使う（認証は環境変数から注入する）。
+CLOUD_CONFIG_PATH = BASE_DIR / "config.cloud.json"
 STATE_PATH = BASE_DIR / "state.json"
 LOG_PATH = BASE_DIR / "coupon_bot.log"
 JST = datetime.timezone(datetime.timedelta(hours=9))
@@ -46,10 +50,29 @@ log = logging.getLogger("coupon_bot")
 # 設定・状態の入出力
 # --------------------------------------------------------------------------
 def load_config():
-    if not CONFIG_PATH.exists():
-        log.error("config.json がありません。config.example.json をコピーして作成してください。")
+    # ローカル(config.json)を優先。無ければクラウド用(config.cloud.json)を使う。
+    if CONFIG_PATH.exists():
+        config = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
+    elif CLOUD_CONFIG_PATH.exists():
+        config = json.loads(CLOUD_CONFIG_PATH.read_text(encoding="utf-8"))
+        log.info("config.json が無いため config.cloud.json を使用します（クラウド実行）。")
+    else:
+        log.error("config.json も config.cloud.json もありません。config.example.json をコピーして作成してください。")
         sys.exit(1)
-    return json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
+
+    # 環境変数(GitHub Secrets)があれば認証情報を上書きする（クラウド実行用）。
+    env_secret = os.environ.get("RAKUTEN_SERVICE_SECRET")
+    env_license = os.environ.get("RAKUTEN_LICENSE_KEY")
+    if env_secret and env_license:
+        config.setdefault("auth", {})
+        config["auth"]["service_secret"] = env_secret
+        config["auth"]["license_key"] = env_license
+
+    auth = config.get("auth", {})
+    if not auth.get("service_secret") or not auth.get("license_key"):
+        log.error("認証情報がありません。config.json か 環境変数 RAKUTEN_SERVICE_SECRET / RAKUTEN_LICENSE_KEY を設定してください。")
+        sys.exit(1)
+    return config
 
 
 def load_state():

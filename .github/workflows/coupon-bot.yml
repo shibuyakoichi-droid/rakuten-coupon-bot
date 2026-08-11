@@ -1,0 +1,52 @@
+name: coupon-bot
+
+# 日本時間で自動実行（cronはUTC基準／JST = UTC+9）:
+#   ・20:00〜23:59（最も売れる時間帯）= 15分ごと  → UTC 11〜14時台の 0,15,30,45分
+#   ・それ以外の時間帯          = 30分ごと  → UTC 0〜10,15〜23時台の 0,30分
+on:
+  schedule:
+    - cron: "0,15,30,45 11-14 * * *"      # JST 20:00〜23:59 を15分間隔
+    - cron: "0,30 0-10,15-23 * * *"       # JST それ以外を30分間隔
+  workflow_dispatch:                        # GitHubの画面／CLIから手動実行（通常チェック）
+
+# state.json をコミットで保存し直すために書き込み権限が必要
+permissions:
+  contents: write
+
+# 同時実行を防ぐ（前の実行が終わるまで次を待つ＝二重発行の防止）
+concurrency:
+  group: coupon-bot
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: リポジトリを取得
+        uses: actions/checkout@v4
+
+      - name: Python を準備
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 依存パッケージ
+        run: pip install requests
+
+      - name: クーポン監視 → 使い切りなら自動発行
+        env:
+          RAKUTEN_SERVICE_SECRET: ${{ secrets.RAKUTEN_SERVICE_SECRET }}
+          RAKUTEN_LICENSE_KEY: ${{ secrets.RAKUTEN_LICENSE_KEY }}
+        run: python coupon_bot.py --once
+
+      - name: 発行状態(state.json)を保存し直す
+        run: |
+          if [ -n "$(git status --porcelain state.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add state.json
+            git commit -m "update coupon state [skip ci]"
+            git push
+          else
+            echo "state.json に変更なし → 保存はスキップ"
+          fi
