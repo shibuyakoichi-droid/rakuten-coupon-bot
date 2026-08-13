@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
     inputs:
       mode:
-        description: "test=限定公開1枚でテスト / issue=本番発行(今日の手動発行用)"
+        description: "test=限定公開1枚 / issue=本番発行(手動) / testline=LINE通知だけ確認"
         required: false
         default: "test"
 
@@ -42,6 +42,8 @@ jobs:
           MODE="${{ github.event.inputs.mode }}"
           if [ "$MODE" = "test" ]; then
             python product_coupon.py --test
+          elif [ "$MODE" = "testline" ]; then
+            python product_coupon.py --test-line
           elif [ "$MODE" = "issue" ]; then
             python product_coupon.py --force
           else

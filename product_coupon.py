@@ -57,8 +57,18 @@ def notify_line(text):
 def main():
     ap = argparse.ArgumentParser(description="商品別クーポン発行")
     ap.add_argument("--test", action="store_true", help="限定公開・1枚でテスト発行")
+    ap.add_argument("--test-line", action="store_true", help="LINE通知だけをテスト送信（発行しない）")
     ap.add_argument("--force", action="store_true", help="対象日チェックを無視して発行（手動用）")
     args = ap.parse_args()
+
+    # LINE通知の疎通テスト（クーポンは発行しない）
+    if args.test_line:
+        if not LINE_TOKEN:
+            print("[!] LINE_CHANNEL_ACCESS_TOKEN が未設定です（Secret登録を確認してください）。")
+            sys.exit(1)
+        notify_line("✅ クーポン発行通知のテストです。この通知が届けば設定OKです。")
+        print("[テスト] LINE通知を送信しました。スマホに届いたか確認してください。")
+        return
 
     cfg = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
     service_secret = os.environ.get("RAKUTEN_SERVICE_SECRET")
