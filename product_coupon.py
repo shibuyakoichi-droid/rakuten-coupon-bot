@@ -1,0 +1,73 @@
+# -*- coding: utf-8 -*-
+"""
+商品別クーポンを指定日に発行する（毎日50枚限定・その日限り）
+============================================================
+product_coupon_config.json の内容で、対象商品のクーポンを1回発行する。
+既存の rakuten_client（coupon.issue）をそのまま使う。認証は環境変数から。
+
+安全弁: 本番発行は config の issue_dates に today(JST) が含まれる日だけ実行する
+        （GitHub Actionsのcronが別日に誤発火しても、対象日以外は発行しない）。
+
+使い方:
+  python product_coupon.py            # 本番発行（config通り・対象日のみ）
+  python product_coupon.py --test     # 限定公開・1枚でテスト発行（動作確認用／日付チェックなし）
+  python product_coupon.py --force    # 対象日チェックを無視して本番発行（手動発行用）
+"""
+import argparse
+import datetime
+import json
+import os
+import sys
+from pathlib import Path
+
+from rakuten_client import RakutenCouponClient, RakutenApiError
+
+BASE_DIR = Path(__file__).parent
+CONFIG_PATH = BASE_DIR / "product_coupon_config.json"
+JST = datetime.timezone(datetime.timedelta(hours=9))
+
+
+def main():
+    ap = argparse.ArgumentParser(description="商品別クーポン発行")
+    ap.add_argument("--test", action="store_true", help="限定公開・1枚でテスト発行")
+    ap.add_argument("--force", action="store_true", help="対象日チェックを無視して発行（手動用）")
+    args = ap.parse_args()
+
+    cfg = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
+    service_secret = os.environ.get("RAKUTEN_SERVICE_SECRET")
+    license_key = os.environ.get("RAKUTEN_LICENSE_KEY")
+    if not service_secret or not license_key:
+        sys.exit("[!] 認証情報がありません（環境変数 RAKUTEN_SERVICE_SECRET / RAKUTEN_LICENSE_KEY）。")
+
+    today = datetime.datetime.now(JST).date().isoformat()
+    allowed = cfg.get("issue_dates", [])
+
+    # 本番は「対象日だけ」発行（テスト・force は除く）
+    if not args.test and not args.force:
+        if allowed and today not in allowed:
+            print(f"[スキップ] 本日 {today} は発行対象日ではありません（対象: {allowed}）。")
+            return
+
+    coupon = dict(cfg["coupon"])
+    if args.test:
+        coupon["display_flag"] = 0            # 限定公開（お客様には出さない）
+        coupon["issue_count"] = 1             # 1枚だけ
+        coupon["coupon_name"] = "【テスト】" + coupon.get("coupon_name", "商品クーポン")
+
+    mode = "テスト発行(限定公開1枚)" if args.test else "本番発行"
+    print(f"[発行] {mode}: {coupon.get('coupon_name')} / 対象={coupon.get('target_item_urls')} "
+          f"/ {coupon.get('discount_factor')}%OFF / {coupon.get('issue_count')}枚 / 本日={today}")
+
+    client = RakutenCouponClient(service_secret, license_key)
+    try:
+        result = client.issue_coupon(coupon, coupon.get("coupon_name"))
+    except RakutenApiError as e:
+        print(f"[発行エラー] {e}")
+        sys.exit(1)
+
+    print(f"[発行完了] couponCode={result['coupon_code']}")
+    print(f"[獲得URL] {result.get('pc_get_url')}")
+
+
+if __name__ == "__main__":
+    main()

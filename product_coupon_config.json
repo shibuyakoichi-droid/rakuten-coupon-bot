@@ -1,0 +1,21 @@
+{
+  "_comment": "商品別クーポン（毎日50枚限定・その日限り）。対象商品や割引はここで設定。認証はGitHub Secretsの環境変数から。",
+  "issue_dates": ["2026-08-13", "2026-08-14", "2026-08-16", "2026-08-17", "2026-08-18"],
+  "coupon": {
+    "coupon_name": "もっちり 20%OFFクーポン（本日限り）",
+    "coupon_code_prefix": "MOCCHI20",
+    "discount_type": 2,
+    "discount_factor": 20,
+    "condition_type": "quantity",
+    "min_purchase_count": 1,
+    "min_purchase_amount": 0,
+    "issue_count": 50,
+    "item_type": 1,
+    "validity_days": 0,
+    "start_buffer_minutes": 0,
+    "member_avail_max_count": 1,
+    "combine_flag": 0,
+    "display_flag": 1,
+    "target_item_urls": ["mocchi"]
+  }
+}
