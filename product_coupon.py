@@ -20,11 +20,38 @@ import os
 import sys
 from pathlib import Path
 
+import requests
+
 from rakuten_client import RakutenCouponClient, RakutenApiError
 
 BASE_DIR = Path(__file__).parent
 CONFIG_PATH = BASE_DIR / "product_coupon_config.json"
 JST = datetime.timezone(datetime.timedelta(hours=9))
+
+# LINE通知（任意）: 環境変数 LINE_CHANNEL_ACCESS_TOKEN があれば発行結果をLINEに送る
+LINE_TOKEN = os.environ.get("LINE_CHANNEL_ACCESS_TOKEN")
+LINE_TO = os.environ.get("LINE_TO")
+
+
+def notify_line(text):
+    """LINEに発行結果を通知する（トークン未設定なら何もしない）。失敗しても本処理は止めない。"""
+    if not LINE_TOKEN:
+        return
+    try:
+        if LINE_TO:
+            url = "https://api.line.me/v2/bot/message/push"
+            payload = {"to": LINE_TO, "messages": [{"type": "text", "text": text[:4900]}]}
+        else:
+            url = "https://api.line.me/v2/bot/message/broadcast"
+            payload = {"messages": [{"type": "text", "text": text[:4900]}]}
+        requests.post(
+            url,
+            headers={"Authorization": f"Bearer {LINE_TOKEN}", "Content-Type": "application/json"},
+            data=json.dumps(payload).encode("utf-8"),
+            timeout=20,
+        )
+    except Exception:  # noqa: BLE001 通知失敗は無視
+        pass
 
 
 def main():
@@ -59,14 +86,25 @@ def main():
           f"/ {coupon.get('discount_factor')}%OFF / {coupon.get('issue_count')}枚 / 本日={today}")
 
     client = RakutenCouponClient(service_secret, license_key)
+    name = coupon.get("coupon_name", "商品クーポン")
     try:
-        result = client.issue_coupon(coupon, coupon.get("coupon_name"))
+        result = client.issue_coupon(coupon, name)
     except RakutenApiError as e:
         print(f"[発行エラー] {e}")
+        if not args.test:
+            notify_line(f"❌ クーポン発行に失敗しました（{today}）\n{name}\n{e}")
         sys.exit(1)
 
     print(f"[発行完了] couponCode={result['coupon_code']}")
     print(f"[獲得URL] {result.get('pc_get_url')}")
+    if not args.test:
+        notify_line(
+            f"✅ クーポンを発行しました（{today}）\n"
+            f"{name}\n"
+            f"{coupon.get('discount_factor')}%OFF / {coupon.get('issue_count')}枚 / その日限り\n"
+            f"コード: {result['coupon_code']}\n"
+            f"獲得URL: {result.get('pc_get_url')}"
+        )
 
 
 if __name__ == "__main__":

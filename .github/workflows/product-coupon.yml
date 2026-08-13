@@ -37,6 +37,7 @@ jobs:
         env:
           RAKUTEN_SERVICE_SECRET: ${{ secrets.RAKUTEN_SERVICE_SECRET }}
           RAKUTEN_LICENSE_KEY: ${{ secrets.RAKUTEN_LICENSE_KEY }}
+          LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
         run: |
           MODE="${{ github.event.inputs.mode }}"
           if [ "$MODE" = "test" ]; then
