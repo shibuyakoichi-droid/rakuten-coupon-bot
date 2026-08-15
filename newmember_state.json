@@ -1,11 +1,9 @@
-﻿{
-    "generation":  1,
-    "current_coupon_code":  "VNXW-Q4OR-MZR8-ILF7",
-    "current_pc_get_url":  "https://coupon.rakuten.co.jp/getCoupon?getkey=UTRPUi1WTlhXLU1aUjgtSUxGNw--\u0026rt=",
-    "issued_at":  "2026-08-15T14:44:17+09:00",
-    "reissue_date":  "2026-08-15",
-    "reissue_count_today":  1,
-    "history":  [
-
-                ]
+{
+  "generation": 1,
+  "current_coupon_code": "VNXW-Q4OR-MZR8-ILF7",
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=UTRPUi1WTlhXLU1aUjgtSUxGNw--&rt=",
+  "issued_at": "2026-08-15T14:44:17+09:00",
+  "reissue_date": "2026-08-15",
+  "reissue_count_today": 1,
+  "history": []
 }
