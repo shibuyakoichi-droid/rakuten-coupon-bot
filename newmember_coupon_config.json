@@ -16,7 +16,7 @@
     "member_avail_max_count": 1,
     "combine_flag": 0,
     "display_flag": 1,
-    "purchase_history_type": 0,
+    "purchase_history_type": 1,
     "target_item_urls": []
   }
 }
