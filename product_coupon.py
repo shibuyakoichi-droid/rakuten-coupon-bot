@@ -59,6 +59,7 @@ def main():
     ap.add_argument("--test", action="store_true", help="限定公開・1枚でテスト発行")
     ap.add_argument("--test-line", action="store_true", help="LINE通知だけをテスト送信（発行しない）")
     ap.add_argument("--force", action="store_true", help="対象日チェックを無視して発行（手動用）")
+    ap.add_argument("--config", default=str(CONFIG_PATH), help="使用する設定ファイル（既定=product_coupon_config.json）")
     args = ap.parse_args()
 
     # LINE通知の疎通テスト（クーポンは発行しない）
@@ -70,7 +71,7 @@ def main():
         print("[テスト] LINE通知を送信しました。スマホに届いたか確認してください。")
         return
 
-    cfg = json.loads(CONFIG_PATH.read_text(encoding="utf-8"))
+    cfg = json.loads(Path(args.config).read_text(encoding="utf-8"))
     service_secret = os.environ.get("RAKUTEN_SERVICE_SECRET")
     license_key = os.environ.get("RAKUTEN_LICENSE_KEY")
     if not service_secret or not license_key:

@@ -13,6 +13,10 @@ on:
         description: "test=限定公開1枚 / issue=本番発行(手動) / testline=LINE通知だけ確認"
         required: false
         default: "test"
+      config:
+        description: "使用する設定ファイル（既定=product_coupon_config.json）"
+        required: false
+        default: "product_coupon_config.json"
 
 concurrency:
   group: product-coupon
@@ -40,13 +44,15 @@ jobs:
           LINE_CHANNEL_ACCESS_TOKEN: ${{ secrets.LINE_CHANNEL_ACCESS_TOKEN }}
         run: |
           MODE="${{ github.event.inputs.mode }}"
+          CFG="${{ github.event.inputs.config }}"
+          CFG="${CFG:-product_coupon_config.json}"
           if [ "$MODE" = "test" ]; then
-            python product_coupon.py --test
+            python product_coupon.py --test --config "$CFG"
           elif [ "$MODE" = "testline" ]; then
             python product_coupon.py --test-line
           elif [ "$MODE" = "issue" ]; then
-            python product_coupon.py --force
+            python product_coupon.py --force --config "$CFG"
           else
-            # スケジュール実行（cron）: 対象日チェックありの本番発行
+            # スケジュール実行（cron）: 対象日チェックありの本番発行（もっちり）
             python product_coupon.py
           fi

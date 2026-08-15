@@ -267,7 +267,7 @@ def build_issue_xml(coupon_conf, coupon_name=None):
       <discountType>{coupon_conf.get('discount_type', 1)}</discountType>
       <discountFactor>{coupon_conf.get('discount_factor', 100)}</discountFactor>
       <memberAvailMaxCount>{coupon_conf.get('member_avail_max_count', 1)}</memberAvailMaxCount>
-      <purchaseHistoryCond><type>0</type></purchaseHistoryCond>
+      <purchaseHistoryCond><type>{coupon_conf.get('purchase_history_type', 0)}</type></purchaseHistoryCond>
       <multiRankCond><rankCond>0</rankCond></multiRankCond>
       <genderCond>NONE</genderCond>
       {age_range_xml}
