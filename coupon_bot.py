@@ -185,6 +185,12 @@ def within_reissue_guards(config, state):
     if not auto.get("enabled", True):
         return False, "automation.enabled=false のため停止中"
 
+    # 発行対象日の制限（あれば）: 今日が対象日でなければ再発行しない
+    #   （その日限りクーポンを翌日以降に再発行しないための安全弁）
+    dates = config.get("issue_dates")
+    if dates and today_str() not in dates:
+        return False, f"本日は発行対象日ではありません（対象: {dates}）"
+
     # 1日の上限
     if state.get("reissue_date") == today_str():
         if state.get("reissue_count_today", 0) >= auto.get("max_reissue_per_day", 5):
@@ -266,7 +272,16 @@ def main():
     parser.add_argument("--loop", type=int, metavar="SEC", help="指定秒ごとに常駐チェック")
     parser.add_argument("--force-issue", action="store_true", help="状態に関わらず1回強制発行（テスト用）")
     parser.add_argument("--set-current", metavar="CODE", help="既存クーポンを監視対象として登録（発行しない）")
+    parser.add_argument("--config", metavar="PATH", help="使用する設定ファイル（既定=config.json/config.cloud.json）")
+    parser.add_argument("--state", metavar="PATH", help="使用する状態ファイル（既定=state.json）")
     args = parser.parse_args()
+
+    # 設定・状態ファイルを差し替え可能に（別クーポンを同じエンジンで監視するため）
+    global CONFIG_PATH, STATE_PATH
+    if args.config:
+        CONFIG_PATH = Path(args.config)
+    if args.state:
+        STATE_PATH = Path(args.state)
 
     config = load_config()
     auth = config["auth"]

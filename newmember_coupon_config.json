@@ -1,6 +1,13 @@
 {
   "_comment": "新規会員限定・2個以上で20%OFF・店舗全体・その日限り・併用不可・全体公開（単発・手動発行）。purchase_history_type: 0=制限なし / 1=購入履歴なし(新規) / 2=不可。RMS画面で type=1=新規購入者と確認済。手動発行のみ(cronは既定のmocchiのみ実行)。日付を変えて再利用可。",
   "issue_dates": ["2026-08-15"],
+  "automation": {
+    "_comment": "使い切ったら自動で次の50枚を発行する歯止め。issue_dates当日のみ有効。",
+    "enabled": true,
+    "reissue_threshold": 10,
+    "max_reissue_per_day": 20,
+    "min_reissue_interval_minutes": 20
+  },
   "coupon": {
     "coupon_name": "新規会員限定 2個以上ご購入で20%OFF（本日限り）",
     "coupon_code_prefix": "NEW2G20",

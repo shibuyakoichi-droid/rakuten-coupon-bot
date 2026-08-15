@@ -1,0 +1,51 @@
+name: newmember-reissue
+
+# 今日の新規会員クーポンを「使い切ったら自動で次の50枚」再発行する監視（本日限り）。
+# 日本時間 2026-08-15 の日中を30分ごとにチェック（cronはUTC / JST = UTC+9）。
+#   ・スクリプト側の issue_dates=["2026-08-15"] とその日限り(validity_days=0)により、
+#     翌日以降は再発行されない安全設計。今日が終われば自然に何もしなくなる。
+on:
+  schedule:
+    - cron: "0,30 15-23 14 8 *"   # UTC 8/14 15:00-23:30 = JST 8/15 00:00-08:30
+    - cron: "0,30 0-14 15 8 *"    # UTC 8/15 00:00-14:30 = JST 8/15 09:00-23:30
+  workflow_dispatch:               # 手動で今すぐ監視を開始する用
+
+permissions:
+  contents: write
+
+concurrency:
+  group: newmember-reissue
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: リポジトリを取得
+        uses: actions/checkout@v4
+
+      - name: Python を準備
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 依存パッケージ
+        run: pip install requests
+
+      - name: 新規会員クーポンを監視 → 使い切りなら再発行
+        env:
+          RAKUTEN_SERVICE_SECRET: ${{ secrets.RAKUTEN_SERVICE_SECRET }}
+          RAKUTEN_LICENSE_KEY: ${{ secrets.RAKUTEN_LICENSE_KEY }}
+        run: python coupon_bot.py --once --config newmember_coupon_config.json --state newmember_state.json
+
+      - name: 状態(newmember_state.json)を保存し直す
+        run: |
+          if [ -n "$(git status --porcelain newmember_state.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add newmember_state.json
+            git commit -m "update newmember coupon state [skip ci]"
+            git push
+          else
+            echo "newmember_state.json に変更なし → 保存はスキップ"
+          fi
