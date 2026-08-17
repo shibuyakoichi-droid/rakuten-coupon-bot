@@ -207,12 +207,23 @@ def build_issue_xml(coupon_conf, coupon_name=None):
     buffer_min = coupon_conf.get("start_buffer_minutes", 90) or 0
     buffer_min = max(90, int(buffer_min))
     start = now + datetime.timedelta(minutes=buffer_min)
-    valid_days = coupon_conf.get("validity_days", 7)
-    if valid_days == 0:
-        # 「その日限り」＝開始日の 23:59:59 まで有効
-        end = start.replace(hour=23, minute=59, second=59, microsecond=0)
+    # 固定開始日(start_date)があり、それが最短開始時刻より未来なら採用（先出しの仕込み発行用）。
+    # 再発行時など start_date が既に過去なら now+buffer を使う（楽天は開始が過去だと不可のため）。
+    sd = coupon_conf.get("start_date")
+    if sd:
+        sd_dt = datetime.datetime.fromisoformat(sd)
+        if sd_dt > start:
+            start = sd_dt
+    # 終了日: 固定の end_date があれば優先。無ければ validity_days（0=その日限り）。
+    ed = coupon_conf.get("end_date")
+    if ed:
+        end = datetime.datetime.fromisoformat(ed)
     else:
-        end = start + datetime.timedelta(days=valid_days)
+        valid_days = coupon_conf.get("validity_days", 7)
+        if valid_days == 0:
+            end = start.replace(hour=23, minute=59, second=59, microsecond=0)
+        else:
+            end = start + datetime.timedelta(days=valid_days)
     fmt = "%Y-%m-%dT%H:%M:%S+09:00"
     name = coupon_name or coupon_conf.get("coupon_name", "クーポン")
 

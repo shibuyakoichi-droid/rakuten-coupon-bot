@@ -1,0 +1,29 @@
+{
+  "_comment": "8/24-27セール：2個以上で10%OFF・店舗全体・全体公開・併用不可。8/24 0:00〜8/27 23:59有効。50枚ずつ発行し40枚使ったら自動再発行(閾値10)。",
+  "issue_dates": ["2026-08-24", "2026-08-25", "2026-08-26", "2026-08-27"],
+  "automation": {
+    "enabled": true,
+    "reissue_threshold": 10,
+    "max_reissue_per_day": 20,
+    "min_reissue_interval_minutes": 20
+  },
+  "coupon": {
+    "coupon_name": "2個以上ご購入で10%OFFクーポン",
+    "coupon_code_prefix": "BUY2-10",
+    "discount_type": 2,
+    "discount_factor": 10,
+    "condition_type": "quantity",
+    "min_purchase_count": 2,
+    "min_purchase_amount": 0,
+    "issue_count": 50,
+    "item_type": 4,
+    "start_date": "2026-08-24T00:00:00+09:00",
+    "end_date": "2026-08-27T23:59:59+09:00",
+    "start_buffer_minutes": 0,
+    "member_avail_max_count": 1,
+    "combine_flag": 0,
+    "display_flag": 1,
+    "purchase_history_type": 0,
+    "target_item_urls": []
+  }
+}
