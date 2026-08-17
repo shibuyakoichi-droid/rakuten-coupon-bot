@@ -1,0 +1,57 @@
+name: sale-2427-reissue
+
+# 8/24-27セールの2クーポン（2個10% / 3個15%）を「使い切ったら自動で次の50枚」再発行する監視。
+# 日本時間 2026-08-24〜27 を30分ごとにチェック（cronはUTC / JST = UTC+9）。
+#   ・各configの issue_dates=["2026-08-24".."27"] と end_date=8/27 により、期間外は再発行しない安全設計。
+on:
+  schedule:
+    - cron: "0,30 15-23 23 8 *"    # UTC 8/23 15-23 = JST 8/24 00:00-08:30
+    - cron: "0,30 * 24,25,26 8 *"  # UTC 8/24,25,26 終日 = JST 8/24 09:00-8/27 08:30
+    - cron: "0,30 0-14 27 8 *"     # UTC 8/27 00-14 = JST 8/27 09:00-23:30
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sale-2427-reissue
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: リポジトリを取得
+        uses: actions/checkout@v4
+
+      - name: Python を準備
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 依存パッケージ
+        run: pip install requests
+
+      - name: 2個10%クーポンを監視 → 使い切りなら再発行
+        env:
+          RAKUTEN_SERVICE_SECRET: ${{ secrets.RAKUTEN_SERVICE_SECRET }}
+          RAKUTEN_LICENSE_KEY: ${{ secrets.RAKUTEN_LICENSE_KEY }}
+        run: python coupon_bot.py --once --config tier2_config.json --state tier2_state.json
+
+      - name: 3個15%クーポンを監視 → 使い切りなら再発行
+        env:
+          RAKUTEN_SERVICE_SECRET: ${{ secrets.RAKUTEN_SERVICE_SECRET }}
+          RAKUTEN_LICENSE_KEY: ${{ secrets.RAKUTEN_LICENSE_KEY }}
+        run: python coupon_bot.py --once --config tier3_config.json --state tier3_state.json
+
+      - name: 状態(tier2/tier3_state.json)を保存し直す
+        run: |
+          git add tier2_state.json tier3_state.json
+          if ! git diff --cached --quiet; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git commit -m "update sale 24-27 coupon state [skip ci]"
+            git push
+          else
+            echo "状態に変更なし → 保存はスキップ"
+          fi
