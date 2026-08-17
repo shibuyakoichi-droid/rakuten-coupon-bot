@@ -86,36 +86,39 @@ def main():
             print(f"[スキップ] 本日 {today} は発行対象日ではありません（対象: {allowed}）。")
             return
 
-    coupon = dict(cfg["coupon"])
-    if args.test:
-        coupon["display_flag"] = 0            # 限定公開（お客様には出さない）
-        coupon["issue_count"] = 1             # 1枚だけ
-        coupon["coupon_name"] = "【テスト】" + coupon.get("coupon_name", "商品クーポン")
-
-    mode = "テスト発行(限定公開1枚)" if args.test else "本番発行"
-    print(f"[発行] {mode}: {coupon.get('coupon_name')} / 対象={coupon.get('target_item_urls')} "
-          f"/ {coupon.get('discount_factor')}%OFF / {coupon.get('issue_count')}枚 / 本日={today}")
+    # 単一(coupon) でも複数(coupons: [...]) でもまとめて発行できる
+    coupon_defs = cfg.get("coupons") or [cfg["coupon"]]
+    # LINE通知: config の notify_line=false なら送らない（テスト時も送らない）
+    notify_on = cfg.get("notify_line", True) and not args.test
 
     client = RakutenCouponClient(service_secret, license_key)
-    name = coupon.get("coupon_name", "商品クーポン")
-    try:
-        result = client.issue_coupon(coupon, name)
-    except RakutenApiError as e:
-        print(f"[発行エラー] {e}")
-        if not args.test:
-            notify_line(f"❌ クーポン発行に失敗しました（{today}）\n{name}\n{e}")
-        sys.exit(1)
+    issued = []
+    for cdef in coupon_defs:
+        coupon = dict(cdef)
+        if args.test:
+            coupon["display_flag"] = 0        # 限定公開（お客様には出さない）
+            coupon["issue_count"] = 1         # 1枚だけ
+            coupon["coupon_name"] = "【テスト】" + coupon.get("coupon_name", "商品クーポン")
+        name = coupon.get("coupon_name", "商品クーポン")
+        mode = "テスト発行(限定公開1枚)" if args.test else "本番発行"
+        print(f"[発行] {mode}: {name} / 対象={coupon.get('target_item_urls')} "
+              f"/ {coupon.get('discount_factor')}%OFF / {coupon.get('issue_count')}枚")
+        try:
+            result = client.issue_coupon(coupon, name)
+        except RakutenApiError as e:
+            print(f"[発行エラー] {name}: {e}")
+            if notify_on:
+                notify_line(f"❌ クーポン発行に失敗しました（{today}）\n{name}\n{e}")
+            sys.exit(1)
+        print(f"[発行完了] {name} couponCode={result['coupon_code']}")
+        print(f"[獲得URL] {result.get('pc_get_url')}")
+        issued.append((name, result["coupon_code"], result.get("pc_get_url")))
 
-    print(f"[発行完了] couponCode={result['coupon_code']}")
-    print(f"[獲得URL] {result.get('pc_get_url')}")
-    if not args.test:
-        notify_line(
-            f"✅ クーポンを発行しました（{today}）\n"
-            f"{name}\n"
-            f"{coupon.get('discount_factor')}%OFF / {coupon.get('issue_count')}枚 / その日限り\n"
-            f"コード: {result['coupon_code']}\n"
-            f"獲得URL: {result.get('pc_get_url')}"
-        )
+    if notify_on:
+        lines = [f"✅ クーポンを発行しました（{today}）"]
+        for name, code, url in issued:
+            lines.append(f"\n{name}\nコード: {code}\n獲得URL: {url}")
+        notify_line("\n".join(lines))
 
 
 if __name__ == "__main__":
