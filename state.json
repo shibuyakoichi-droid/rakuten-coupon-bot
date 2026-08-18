@@ -1,8 +1,8 @@
 {
-  "generation": 7,
-  "current_coupon_code": "64LP-TWVF-FUV5-LZKA",
-  "issued_at": "2026-08-17T00:21:46.904411+09:00",
-  "reissue_date": "2026-08-17",
+  "generation": 8,
+  "current_coupon_code": "FYVX-MTJF-AEIJ-Y0NY",
+  "issued_at": "2026-08-18T11:36:28.829690+09:00",
+  "reissue_date": "2026-08-18",
   "reissue_count_today": 1,
   "history": [
     {
@@ -46,7 +46,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=VFdWRi02NExQLUZVVjUtTFpLQQ--&rt=",
       "issued_at": "2026-08-17T00:21:46.904411+09:00",
       "reason": "残9枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 8,
+      "coupon_code": "FYVX-MTJF-AEIJ-Y0NY",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=TVRKRi1GWVZYLUFFSUotWTBOWQ--&rt=",
+      "issued_at": "2026-08-18T11:36:28.829690+09:00",
+      "reason": "残9枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=VFdWRi02NExQLUZVVjUtTFpLQQ--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=TVRKRi1GWVZYLUFFSUotWTBOWQ--&rt="
 }
