@@ -1,9 +1,9 @@
 {
-  "generation": 8,
-  "current_coupon_code": "FYVX-MTJF-AEIJ-Y0NY",
-  "issued_at": "2026-08-18T11:36:28.829690+09:00",
+  "generation": 9,
+  "current_coupon_code": "AMEX-DXDQ-ZCN3-KZQR",
+  "issued_at": "2026-08-18T22:28:40.695990+09:00",
   "reissue_date": "2026-08-18",
-  "reissue_count_today": 1,
+  "reissue_count_today": 2,
   "history": [
     {
       "generation": 2,
@@ -53,7 +53,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=TVRKRi1GWVZYLUFFSUotWTBOWQ--&rt=",
       "issued_at": "2026-08-18T11:36:28.829690+09:00",
       "reason": "残9枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 9,
+      "coupon_code": "AMEX-DXDQ-ZCN3-KZQR",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=RFhEUS1BTUVYLVpDTjMtS1pRUg--&rt=",
+      "issued_at": "2026-08-18T22:28:40.695990+09:00",
+      "reason": "残3枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=TVRKRi1GWVZYLUFFSUotWTBOWQ--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=RFhEUS1BTUVYLVpDTjMtS1pRUg--&rt="
 }
