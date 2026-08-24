@@ -1,10 +1,10 @@
 {
-  "generation": 3,
-  "current_coupon_code": "94GZ-YKIE-IZAP-OPEQ",
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WUtJRS05NEdaLUlaQVAtT1BFUQ--&rt=",
-  "issued_at": "2026-08-25T01:41:33.559268+09:00",
+  "generation": 4,
+  "current_coupon_code": "OGSK-KJQL-D7DC-V1ZW",
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=S0pRTC1PR1NLLUQ3REMtVjFaVw--&rt=",
+  "issued_at": "2026-08-25T08:51:19.393969+09:00",
   "reissue_date": "2026-08-25",
-  "reissue_count_today": 1,
+  "reissue_count_today": 2,
   "history": [
     {
       "generation": 2,
@@ -19,6 +19,13 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WUtJRS05NEdaLUlaQVAtT1BFUQ--&rt=",
       "issued_at": "2026-08-25T01:41:33.559268+09:00",
       "reason": "残5枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 4,
+      "coupon_code": "OGSK-KJQL-D7DC-V1ZW",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=S0pRTC1PR1NLLUQ3REMtVjFaVw--&rt=",
+      "issued_at": "2026-08-25T08:51:19.393969+09:00",
+      "reason": "残10枚（閾値10）で使い切り"
     }
   ]
 }
