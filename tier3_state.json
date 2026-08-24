@@ -1,9 +1,17 @@
 {
-  "generation": 1,
-  "current_coupon_code": "KJEL-HLXY-XQPA-TC4S",
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=SExYWS1LSkVMLVhRUEEtVEM0Uw--&rt=",
-  "issued_at": "2026-08-18T06:40:19+09:00",
-  "reissue_date": "2026-08-18",
+  "generation": 2,
+  "current_coupon_code": "CIOT-YOQZ-GZIN-VJK4",
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WU9RWi1DSU9ULUdaSU4tVkpLNA--&rt=",
+  "issued_at": "2026-08-24T20:55:59.790724+09:00",
+  "reissue_date": "2026-08-24",
   "reissue_count_today": 1,
-  "history": []
+  "history": [
+    {
+      "generation": 2,
+      "coupon_code": "CIOT-YOQZ-GZIN-VJK4",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WU9RWi1DSU9ULUdaSU4tVkpLNA--&rt=",
+      "issued_at": "2026-08-24T20:55:59.790724+09:00",
+      "reason": "残0枚（閾値10）で使い切り"
+    }
+  ]
 }
