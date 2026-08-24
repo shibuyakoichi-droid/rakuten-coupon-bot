@@ -1,8 +1,8 @@
 {
-  "generation": 12,
-  "current_coupon_code": "AITZ-IJBC-5CHF-45WV",
-  "issued_at": "2026-08-22T14:55:14.252989+09:00",
-  "reissue_date": "2026-08-22",
+  "generation": 13,
+  "current_coupon_code": "ESTQ-7DGI-R8KN-DSXY",
+  "issued_at": "2026-08-24T21:35:46.020192+09:00",
+  "reissue_date": "2026-08-24",
   "reissue_count_today": 1,
   "history": [
     {
@@ -81,7 +81,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=SUpCQy1BSVRaLTVDSEYtNDVXVg--&rt=",
       "issued_at": "2026-08-22T14:55:14.252989+09:00",
       "reason": "残10枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 13,
+      "coupon_code": "ESTQ-7DGI-R8KN-DSXY",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=N0RHSS1FU1RRLVI4S04tRFNYWQ--&rt=",
+      "issued_at": "2026-08-24T21:35:46.020192+09:00",
+      "reason": "残0枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=SUpCQy1BSVRaLTVDSEYtNDVXVg--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=N0RHSS1FU1RRLVI4S04tRFNYWQ--&rt="
 }
