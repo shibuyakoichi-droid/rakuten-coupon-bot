@@ -1,8 +1,8 @@
 {
-  "generation": 13,
-  "current_coupon_code": "ESTQ-7DGI-R8KN-DSXY",
-  "issued_at": "2026-08-24T21:35:46.020192+09:00",
-  "reissue_date": "2026-08-24",
+  "generation": 14,
+  "current_coupon_code": "Y4PM-QCCA-5CNW-ONTJ",
+  "issued_at": "2026-08-25T22:33:32.497310+09:00",
+  "reissue_date": "2026-08-25",
   "reissue_count_today": 1,
   "history": [
     {
@@ -88,7 +88,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=N0RHSS1FU1RRLVI4S04tRFNYWQ--&rt=",
       "issued_at": "2026-08-24T21:35:46.020192+09:00",
       "reason": "残0枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 14,
+      "coupon_code": "Y4PM-QCCA-5CNW-ONTJ",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=UUNDQS1ZNFBNLTVDTlctT05USg--&rt=",
+      "issued_at": "2026-08-25T22:33:32.497310+09:00",
+      "reason": "残9枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=N0RHSS1FU1RRLVI4S04tRFNYWQ--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=UUNDQS1ZNFBNLTVDTlctT05USg--&rt="
 }
