@@ -1,10 +1,10 @@
 {
-  "generation": 3,
-  "current_coupon_code": "4WXR-RRLK-7EOA-LVRS",
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=UlJMSy00V1hSLTdFT0EtTFZSUw--&rt=",
-  "issued_at": "2026-08-25T05:33:39.144346+09:00",
+  "generation": 4,
+  "current_coupon_code": "2TFX-YPMA-9YJS-M4X6",
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WVBNQS0yVEZYLTlZSlMtTTRYNg--&rt=",
+  "issued_at": "2026-08-25T11:40:53.165145+09:00",
   "reissue_date": "2026-08-25",
-  "reissue_count_today": 1,
+  "reissue_count_today": 2,
   "history": [
     {
       "generation": 2,
@@ -19,6 +19,13 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=UlJMSy00V1hSLTdFT0EtTFZSUw--&rt=",
       "issued_at": "2026-08-25T05:33:39.144346+09:00",
       "reason": "残9枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 4,
+      "coupon_code": "2TFX-YPMA-9YJS-M4X6",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WVBNQS0yVEZYLTlZSlMtTTRYNg--&rt=",
+      "issued_at": "2026-08-25T11:40:53.165145+09:00",
+      "reason": "残4枚（閾値10）で使い切り"
     }
   ]
 }
