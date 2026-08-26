@@ -5,7 +5,7 @@
     "license_key": ""
   },
   "coupon": {
-    "_comment": "9月前半スーパーSALE用の常設クーポン。2026-09-04 00:00(JST) から使う。店内全商品。50枚を使い切ったら自動で再発行する。",
+    "_comment": "9月前半スーパーSALE用の常設クーポン。2026-09-04 20:00 〜 2026-09-11 01:59(JST)。店内全商品。50枚を使い切ったら自動で再発行する。start_date は初回の仕込み発行用（再発行時は過去日になるので自動的に「今から90分後」が使われる）。end_date は毎回この日時で固定＝SALE終了後にクーポンが残らない。",
     "coupon_name": "3000円以上ご購入で10%OFF",
     "coupon_code_prefix": "A3000P10",
     "discount_type": 2,
@@ -15,14 +15,15 @@
     "min_purchase_count": 2,
     "issue_count": 50,
     "item_type": 4,
-    "validity_days": 7,
     "start_buffer_minutes": 0,
     "member_avail_max_count": 1,
     "combine_flag": 0,
     "target_item_urls": [],
     "amount_condition_type_code": 1,
     "quantity_condition_type_code": 2,
-    "display_flag": 1
+    "display_flag": 1,
+    "start_date": "2026-09-04T20:00:00+09:00",
+    "end_date": "2026-09-11T01:59:59+09:00"
   },
   "automation": {
     "_comment": "再発行の歯止め設定。残りが reissue_threshold 枚以下になったら50枚を再発行する。",
