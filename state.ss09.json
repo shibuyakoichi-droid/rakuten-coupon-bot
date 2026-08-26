@@ -1,0 +1,17 @@
+{
+  "generation": 1,
+  "current_coupon_code": "6R5I-OMXK-XC2H-SSW9",
+  "issued_at": "2026-08-26T17:45:27.547831+09:00",
+  "reissue_date": "2026-08-26",
+  "reissue_count_today": 1,
+  "history": [
+    {
+      "generation": 1,
+      "coupon_code": "6R5I-OMXK-XC2H-SSW9",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=T01YSy02UjVJLVhDMkgtU1NXOQ--&rt=",
+      "issued_at": "2026-08-26T17:45:27.547831+09:00",
+      "reason": "手動強制発行(--force-issue)"
+    }
+  ],
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=T01YSy02UjVJLVhDMkgtU1NXOQ--&rt="
+}
