@@ -33,18 +33,51 @@ jobs:
       - name: 依存パッケージ
         run: pip install requests
 
+      # 期間で使う設定を切り替える（渋谷さんの指示 2026-08-26）
+      #   〜2026-08-27 09:59  = 3000円以上で100円OFF（8月後半マラソン）… 現行のまま
+      #   2026-08-27 10:00〜2026-09-03 = 何も発行しない（一旦おやすみ）
+      #   2026-09-04 00:00〜   = 3000円以上で10%OFF（9月前半スーパーSALE）
+      # 期間を変えるときは下の数字（YYYYMMDDHHMM）だけ直す。
+      - name: 期間から設定を選ぶ
+        id: pick
+        run: |
+          NOW=$(TZ=Asia/Tokyo date +%Y%m%d%H%M)
+          MARATHON_END=202608270959
+          SS_START=202609040000
+          if [ "$NOW" -le "$MARATHON_END" ]; then
+            echo "cfg=config.cloud.json" >> $GITHUB_OUTPUT
+            echo "st=state.json"         >> $GITHUB_OUTPUT
+            echo "label=3000円以上で100円OFF（8月後半マラソン）" >> $GITHUB_OUTPUT
+          elif [ "$NOW" -ge "$SS_START" ]; then
+            echo "cfg=config.ss09.json"  >> $GITHUB_OUTPUT
+            echo "st=state.ss09.json"    >> $GITHUB_OUTPUT
+            echo "label=3000円以上で10%OFF（9月前半スーパーSALE）" >> $GITHUB_OUTPUT
+          else
+            echo "cfg="                  >> $GITHUB_OUTPUT
+            echo "label=期間外のため発行しません（8/27 10:00〜9/3）" >> $GITHUB_OUTPUT
+          fi
+          echo "現在(JST)=$NOW"
+
+      - name: 期間外はここで終了
+        if: steps.pick.outputs.cfg == ''
+        run: echo "${{ steps.pick.outputs.label }}"
+
       - name: クーポン監視 → 使い切りなら自動発行
+        if: steps.pick.outputs.cfg != ''
         env:
           RAKUTEN_SERVICE_SECRET: ${{ secrets.RAKUTEN_SERVICE_SECRET }}
           RAKUTEN_LICENSE_KEY: ${{ secrets.RAKUTEN_LICENSE_KEY }}
-        run: python coupon_bot.py --once
-
-      - name: 発行状態(state.json)を保存し直す
         run: |
-          if [ -n "$(git status --porcelain state.json)" ]; then
+          echo "使用する設定: ${{ steps.pick.outputs.label }}"
+          python coupon_bot.py --once --config "${{ steps.pick.outputs.cfg }}" --state "${{ steps.pick.outputs.st }}"
+
+      - name: 発行状態(state)を保存し直す
+        if: steps.pick.outputs.cfg != ''
+        run: |
+          if [ -n "$(git status --porcelain state.json state.ss09.json)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add state.json
+            git add state.json state.ss09.json
             git commit -m "update coupon state [skip ci]"
             git push
           else

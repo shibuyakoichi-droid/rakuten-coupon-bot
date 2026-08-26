@@ -1,0 +1,42 @@
+{
+  "auth": {
+    "_comment": "クラウド(GitHub Actions)では認証情報はここに書かず、GitHub Secretsの RAKUTEN_SERVICE_SECRET / RAKUTEN_LICENSE_KEY から環境変数で注入する。",
+    "service_secret": "",
+    "license_key": ""
+  },
+  "coupon": {
+    "_comment": "9月前半スーパーSALE用の常設クーポン。2026-09-04 00:00(JST) から使う。店内全商品。50枚を使い切ったら自動で再発行する。",
+    "coupon_name": "3000円以上ご購入で10%OFF",
+    "coupon_code_prefix": "A3000P10",
+    "discount_type": 2,
+    "discount_factor": 10,
+    "condition_type": "amount",
+    "min_purchase_amount": 3000,
+    "min_purchase_count": 2,
+    "issue_count": 50,
+    "item_type": 4,
+    "validity_days": 7,
+    "start_buffer_minutes": 0,
+    "member_avail_max_count": 1,
+    "combine_flag": 0,
+    "target_item_urls": [],
+    "amount_condition_type_code": 1,
+    "quantity_condition_type_code": 2,
+    "display_flag": 1
+  },
+  "automation": {
+    "_comment": "再発行の歯止め設定。残りが reissue_threshold 枚以下になったら50枚を再発行する。",
+    "enabled": true,
+    "reissue_threshold": 10,
+    "max_reissue_per_day": 5,
+    "min_reissue_interval_minutes": 30
+  },
+  "notify": {
+    "enabled": false,
+    "smtp_host": "smtp.gmail.com",
+    "smtp_port": 587,
+    "smtp_user": "",
+    "smtp_password": "",
+    "to": "shibuya.koichi@gmail.com"
+  }
+}
