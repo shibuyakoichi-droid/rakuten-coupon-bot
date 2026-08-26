@@ -1,10 +1,10 @@
 {
-  "generation": 7,
-  "current_coupon_code": "AEEK-74QZ-ICUT-9119",
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=NzRRWi1BRUVLLUlDVVQtOTExOQ--&rt=",
-  "issued_at": "2026-08-26T10:34:51.756227+09:00",
+  "generation": 8,
+  "current_coupon_code": "ES7O-3RYJ-UDEI-0ATE",
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=M1JZSi1FUzdPLVVERUktMEFURQ--&rt=",
+  "issued_at": "2026-08-26T20:57:30.460091+09:00",
   "reissue_date": "2026-08-26",
-  "reissue_count_today": 1,
+  "reissue_count_today": 2,
   "history": [
     {
       "generation": 2,
@@ -46,6 +46,13 @@
       "coupon_code": "AEEK-74QZ-ICUT-9119",
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=NzRRWi1BRUVLLUlDVVQtOTExOQ--&rt=",
       "issued_at": "2026-08-26T10:34:51.756227+09:00",
+      "reason": "残6枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 8,
+      "coupon_code": "ES7O-3RYJ-UDEI-0ATE",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=M1JZSi1FUzdPLVVERUktMEFURQ--&rt=",
+      "issued_at": "2026-08-26T20:57:30.460091+09:00",
       "reason": "残6枚（閾値10）で使い切り"
     }
   ]
