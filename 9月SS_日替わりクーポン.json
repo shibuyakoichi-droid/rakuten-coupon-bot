@@ -1,0 +1,276 @@
+{
+  "_comment": "9月前半スーパーSALE 日替わりタイムセールクーポン。99%OFF・1点から・各50枚限定・20:00〜23:59のその日限り。",
+  "_issued": "未発行",
+  "issue_dates": [
+    "2026-08-25"
+  ],
+  "notify_line": false,
+  "coupons": [
+    {
+      "coupon_name": "【9/4限定】もっちり腹巻 99%OFF",
+      "coupon_code_prefix": "SS9904",
+      "discount_type": 2,
+      "discount_factor": 99,
+      "condition_type": "quantity",
+      "min_purchase_count": 1,
+      "min_purchase_amount": 0,
+      "issue_count": 50,
+      "item_type": 1,
+      "start_date": "2026-09-04T20:00:00+09:00",
+      "end_date": "2026-09-04T23:59:59+09:00",
+      "member_avail_max_count": 1,
+      "combine_flag": 0,
+      "display_flag": 1,
+      "target_item_urls": [
+        "mocchi-og"
+      ]
+    },
+    {
+      "coupon_name": "【9/4限定】キッズスパッツ 99%OFF",
+      "coupon_code_prefix": "SS9904",
+      "discount_type": 2,
+      "discount_factor": 99,
+      "condition_type": "quantity",
+      "min_purchase_count": 1,
+      "min_purchase_amount": 0,
+      "issue_count": 50,
+      "item_type": 1,
+      "start_date": "2026-09-04T20:00:00+09:00",
+      "end_date": "2026-09-04T23:59:59+09:00",
+      "member_avail_max_count": 1,
+      "combine_flag": 0,
+      "display_flag": 1,
+      "target_item_urls": [
+        "g44-1spats"
+      ]
+    },
+    {
+      "coupon_name": "【9/5限定】もっちり腹巻パンツ 99%OFF",
+      "coupon_code_prefix": "SS9905",
+      "discount_type": 2,
+      "discount_factor": 99,
+      "condition_type": "quantity",
+      "min_purchase_count": 1,
+      "min_purchase_amount": 0,
+      "issue_count": 50,
+      "item_type": 1,
+      "start_date": "2026-09-05T20:00:00+09:00",
+      "end_date": "2026-09-05T23:59:59+09:00",
+      "member_avail_max_count": 1,
+      "combine_flag": 0,
+      "display_flag": 1,
+      "target_item_urls": [
+        "mocchi-og-5ml"
+      ]
+    },
+    {
+      "coupon_name": "【9/5限定】ベビーレギンス 99%OFF",
+      "coupon_code_prefix": "SS9905",
+      "discount_type": 2,
+      "discount_factor": 99,
+      "condition_type": "quantity",
+      "min_purchase_count": 1,
+      "min_purchase_amount": 0,
+      "issue_count": 50,
+      "item_type": 1,
+      "start_date": "2026-09-05T20:00:00+09:00",
+      "end_date": "2026-09-05T23:59:59+09:00",
+      "member_avail_max_count": 1,
+      "combine_flag": 0,
+      "display_flag": 1,
+      "target_item_urls": [
+        "r-tereko"
+      ]
+    },
+    {
+      "coupon_name": "【9/6限定】パイルスタイ 99%OFF",
+      "coupon_code_prefix": "SS9906",
+      "discount_type": 2,
+      "discount_factor": 99,
+      "condition_type": "quantity",
+      "min_purchase_count": 1,
+      "min_purchase_amount": 0,
+      "issue_count": 50,
+      "item_type": 1,
+      "start_date": "2026-09-06T20:00:00+09:00",
+      "end_date": "2026-09-06T23:59:59+09:00",
+      "member_avail_max_count": 1,
+      "combine_flag": 0,
+      "display_flag": 1,
+      "target_item_urls": [
+        "bib-og"
+      ]
+    },
+    {
+      "coupon_name": "【9/6限定】numaスパッツ 99%OFF",
+      "coupon_code_prefix": "SS9906",
+      "discount_type": 2,
+      "discount_factor": 99,
+      "condition_type": "quantity",
+      "min_purchase_count": 1,
+      "min_purchase_amount": 0,
+      "issue_count": 50,
+      "item_type": 1,
+      "start_date": "2026-09-06T20:00:00+09:00",
+      "end_date": "2026-09-06T23:59:59+09:00",
+      "member_avail_max_count": 1,
+      "combine_flag": 0,
+      "display_flag": 1,
+      "target_item_urls": [
+        "numa-spats"
+      ]
+    },
+    {
+      "coupon_name": "【9/7限定】もっちり腹巻 99%OFF",
+      "coupon_code_prefix": "SS9907",
+      "discount_type": 2,
+      "discount_factor": 99,
+      "condition_type": "quantity",
+      "min_purchase_count": 1,
+      "min_purchase_amount": 0,
+      "issue_count": 50,
+      "item_type": 1,
+      "start_date": "2026-09-07T20:00:00+09:00",
+      "end_date": "2026-09-07T23:59:59+09:00",
+      "member_avail_max_count": 1,
+      "combine_flag": 0,
+      "display_flag": 1,
+      "target_item_urls": [
+        "mocchi-og"
+      ]
+    },
+    {
+      "coupon_name": "【9/7限定】キッズスパッツ 99%OFF",
+      "coupon_code_prefix": "SS9907",
+      "discount_type": 2,
+      "discount_factor": 99,
+      "condition_type": "quantity",
+      "min_purchase_count": 1,
+      "min_purchase_amount": 0,
+      "issue_count": 50,
+      "item_type": 1,
+      "start_date": "2026-09-07T20:00:00+09:00",
+      "end_date": "2026-09-07T23:59:59+09:00",
+      "member_avail_max_count": 1,
+      "combine_flag": 0,
+      "display_flag": 1,
+      "target_item_urls": [
+        "g44-1spats"
+      ]
+    },
+    {
+      "coupon_name": "【9/8限定】もっちり腹巻パンツ 99%OFF",
+      "coupon_code_prefix": "SS9908",
+      "discount_type": 2,
+      "discount_factor": 99,
+      "condition_type": "quantity",
+      "min_purchase_count": 1,
+      "min_purchase_amount": 0,
+      "issue_count": 50,
+      "item_type": 1,
+      "start_date": "2026-09-08T20:00:00+09:00",
+      "end_date": "2026-09-08T23:59:59+09:00",
+      "member_avail_max_count": 1,
+      "combine_flag": 0,
+      "display_flag": 1,
+      "target_item_urls": [
+        "mocchi-og-5ml"
+      ]
+    },
+    {
+      "coupon_name": "【9/8限定】ベビーレギンス 99%OFF",
+      "coupon_code_prefix": "SS9908",
+      "discount_type": 2,
+      "discount_factor": 99,
+      "condition_type": "quantity",
+      "min_purchase_count": 1,
+      "min_purchase_amount": 0,
+      "issue_count": 50,
+      "item_type": 1,
+      "start_date": "2026-09-08T20:00:00+09:00",
+      "end_date": "2026-09-08T23:59:59+09:00",
+      "member_avail_max_count": 1,
+      "combine_flag": 0,
+      "display_flag": 1,
+      "target_item_urls": [
+        "r-tereko"
+      ]
+    },
+    {
+      "coupon_name": "【9/9限定】パイルスタイ 99%OFF",
+      "coupon_code_prefix": "SS9909",
+      "discount_type": 2,
+      "discount_factor": 99,
+      "condition_type": "quantity",
+      "min_purchase_count": 1,
+      "min_purchase_amount": 0,
+      "issue_count": 50,
+      "item_type": 1,
+      "start_date": "2026-09-09T20:00:00+09:00",
+      "end_date": "2026-09-09T23:59:59+09:00",
+      "member_avail_max_count": 1,
+      "combine_flag": 0,
+      "display_flag": 1,
+      "target_item_urls": [
+        "bib-og"
+      ]
+    },
+    {
+      "coupon_name": "【9/9限定】numaスパッツ 99%OFF",
+      "coupon_code_prefix": "SS9909",
+      "discount_type": 2,
+      "discount_factor": 99,
+      "condition_type": "quantity",
+      "min_purchase_count": 1,
+      "min_purchase_amount": 0,
+      "issue_count": 50,
+      "item_type": 1,
+      "start_date": "2026-09-09T20:00:00+09:00",
+      "end_date": "2026-09-09T23:59:59+09:00",
+      "member_avail_max_count": 1,
+      "combine_flag": 0,
+      "display_flag": 1,
+      "target_item_urls": [
+        "numa-spats"
+      ]
+    },
+    {
+      "coupon_name": "【9/10限定】もっちり腹巻パンツ 99%OFF",
+      "coupon_code_prefix": "SS9910",
+      "discount_type": 2,
+      "discount_factor": 99,
+      "condition_type": "quantity",
+      "min_purchase_count": 1,
+      "min_purchase_amount": 0,
+      "issue_count": 50,
+      "item_type": 1,
+      "start_date": "2026-09-10T20:00:00+09:00",
+      "end_date": "2026-09-10T23:59:59+09:00",
+      "member_avail_max_count": 1,
+      "combine_flag": 0,
+      "display_flag": 1,
+      "target_item_urls": [
+        "mocchi-og-5ml"
+      ]
+    },
+    {
+      "coupon_name": "【9/10限定】ベビーレギンス 99%OFF",
+      "coupon_code_prefix": "SS9910",
+      "discount_type": 2,
+      "discount_factor": 99,
+      "condition_type": "quantity",
+      "min_purchase_count": 1,
+      "min_purchase_amount": 0,
+      "issue_count": 50,
+      "item_type": 1,
+      "start_date": "2026-09-10T20:00:00+09:00",
+      "end_date": "2026-09-10T23:59:59+09:00",
+      "member_avail_max_count": 1,
+      "combine_flag": 0,
+      "display_flag": 1,
+      "target_item_urls": [
+        "r-tereko"
+      ]
+    }
+  ]
+}

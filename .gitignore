@@ -1,8 +1,4 @@
-# 秘密情報はコミットしない（config.json にはローカルの実キーが入る）
-config.json
-*.log
 __pycache__/
 *.pyc
-
-# state.json はクラウド(GitHub Actions)で世代・発行状態を引き継ぐためコミットする。
-# （クーポンコードと公開用の獲得URLのみで、秘密情報は含まない）
+_発行結果_*.txt
+_テスト1枚.json
