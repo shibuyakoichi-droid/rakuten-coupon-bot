@@ -1,10 +1,10 @@
 {
-  "generation": 9,
-  "current_coupon_code": "RAUY-ELIS-VFJD-OP8M",
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=RUxJUy1SQVVZLVZGSkQtT1A4TQ--&rt=",
-  "issued_at": "2026-08-27T01:00:59.525998+09:00",
+  "generation": 10,
+  "current_coupon_code": "JOZC-IS1J-ZTHQ-JYCW",
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=SVMxSi1KT1pDLVpUSFEtSllDVw--&rt=",
+  "issued_at": "2026-08-27T16:16:09.575957+09:00",
   "reissue_date": "2026-08-27",
-  "reissue_count_today": 1,
+  "reissue_count_today": 2,
   "history": [
     {
       "generation": 2,
@@ -61,6 +61,13 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=RUxJUy1SQVVZLVZGSkQtT1A4TQ--&rt=",
       "issued_at": "2026-08-27T01:00:59.525998+09:00",
       "reason": "残8枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 10,
+      "coupon_code": "JOZC-IS1J-ZTHQ-JYCW",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=SVMxSi1KT1pDLVpUSFEtSllDVw--&rt=",
+      "issued_at": "2026-08-27T16:16:09.575957+09:00",
+      "reason": "残6枚（閾値10）で使い切り"
     }
   ]
 }
