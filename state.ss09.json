@@ -1,9 +1,9 @@
 {
-  "generation": 8,
-  "current_coupon_code": "MNIL-LOAL-VPEY-P58P",
-  "issued_at": "2026-09-05T21:55:31.425506+09:00",
-  "reissue_date": "2026-09-05",
-  "reissue_count_today": 5,
+  "generation": 9,
+  "current_coupon_code": "7FQM-12W1-D8NX-ZHZJ",
+  "issued_at": "2026-09-06T01:15:39.532794+09:00",
+  "reissue_date": "2026-09-06",
+  "reissue_count_today": 1,
   "history": [
     {
       "generation": 1,
@@ -60,7 +60,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=TE9BTC1NTklMLVZQRVktUDU4UA--&rt=",
       "issued_at": "2026-09-05T21:55:31.425506+09:00",
       "reason": "残0枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 9,
+      "coupon_code": "7FQM-12W1-D8NX-ZHZJ",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=MTJXMS03RlFNLUQ4TlgtWkhaSg--&rt=",
+      "issued_at": "2026-09-06T01:15:39.532794+09:00",
+      "reason": "残0枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=TE9BTC1NTklMLVZQRVktUDU4UA--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=MTJXMS03RlFNLUQ4TlgtWkhaSg--&rt="
 }
