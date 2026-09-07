@@ -1,9 +1,9 @@
 {
-  "generation": 12,
-  "current_coupon_code": "EGIP-ZOGS-YUAY-C5LT",
-  "issued_at": "2026-09-06T22:52:38.713956+09:00",
-  "reissue_date": "2026-09-06",
-  "reissue_count_today": 4,
+  "generation": 13,
+  "current_coupon_code": "PIVW-HRAZ-0CKF-DEIU",
+  "issued_at": "2026-09-07T14:04:07.070774+09:00",
+  "reissue_date": "2026-09-07",
+  "reissue_count_today": 1,
   "history": [
     {
       "generation": 1,
@@ -88,7 +88,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=Wk9HUy1FR0lQLVlVQVktQzVMVA--&rt=",
       "issued_at": "2026-09-06T22:52:38.713956+09:00",
       "reason": "残0枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 13,
+      "coupon_code": "PIVW-HRAZ-0CKF-DEIU",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=SFJBWi1QSVZXLTBDS0YtREVJVQ--&rt=",
+      "issued_at": "2026-09-07T14:04:07.070774+09:00",
+      "reason": "残0枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=Wk9HUy1FR0lQLVlVQVktQzVMVA--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=SFJBWi1QSVZXLTBDS0YtREVJVQ--&rt="
 }
