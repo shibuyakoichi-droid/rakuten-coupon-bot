@@ -33,27 +33,22 @@ jobs:
       - name: 依存パッケージ
         run: pip install requests
 
-      # 期間で使う設定を切り替える（渋谷さんの指示 2026-08-26）
-      #   〜2026-08-27 09:59  = 3000円以上で100円OFF（8月後半マラソン）… 現行のまま
-      #   2026-08-27 10:00〜2026-09-03 = 何も発行しない（一旦おやすみ）
-      #   2026-09-04 20:00〜2026-09-11 01:59 = 3000円以上で10%OFF（9月前半スーパーSALE）
-      #   2026-09-11 02:00〜  = 発行しない
+      # 期間で使う設定を切り替える（渋谷さんの指示）
+      #   〜2026-08-27 09:59            = 3000円以上で100円OFF（8月後半マラソン）… 終了
+      #   2026-09-04 20:00〜09-11 01:59 = 3000円以上で10%OFF（9月前半スーパーSALE）… 終了
+      #   2026-09-19 20:00〜09-30 23:59 = 3000円以上で100円OFF（9月後半イベント）★いまここ
+      #   それ以外                       = 発行しない
       # 期間を変えるときは下の数字（YYYYMMDDHHMM）だけ直す。
       - name: 期間から設定を選ぶ
         id: pick
         run: |
           NOW=$(TZ=Asia/Tokyo date +%Y%m%d%H%M)
-          MARATHON_END=202608270959
-          SS_START=202609042000
-          SS_END=202609110159
-          if [ "$NOW" -le "$MARATHON_END" ]; then
-            echo "cfg=config.cloud.json" >> $GITHUB_OUTPUT
-            echo "st=state.json"         >> $GITHUB_OUTPUT
-            echo "label=3000円以上で100円OFF（8月後半マラソン）" >> $GITHUB_OUTPUT
-          elif [ "$NOW" -ge "$SS_START" ] && [ "$NOW" -le "$SS_END" ]; then
-            echo "cfg=config.ss09.json"  >> $GITHUB_OUTPUT
-            echo "st=state.ss09.json"    >> $GITHUB_OUTPUT
-            echo "label=3000円以上で10%OFF（9月前半スーパーSALE）" >> $GITHUB_OUTPUT
+          EVENT_START=202609192000
+          EVENT_END=202609302359
+          if [ "$NOW" -ge "$EVENT_START" ] && [ "$NOW" -le "$EVENT_END" ]; then
+            echo "cfg=config.0919.json" >> $GITHUB_OUTPUT
+            echo "st=state.0919.json"   >> $GITHUB_OUTPUT
+            echo "label=3000円以上で100円OFF（9月後半イベント）" >> $GITHUB_OUTPUT
           else
             echo "cfg="                  >> $GITHUB_OUTPUT
             echo "label=期間外のため発行しません" >> $GITHUB_OUTPUT
@@ -76,10 +71,10 @@ jobs:
       - name: 発行状態(state)を保存し直す
         if: steps.pick.outputs.cfg != ''
         run: |
-          if [ -n "$(git status --porcelain state.json state.ss09.json)" ]; then
+          if [ -n "$(git status --porcelain state.json state.ss09.json state.0919.json)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add state.json state.ss09.json
+            git add state.json state.ss09.json state.0919.json
             git commit -m "update coupon state [skip ci]"
             git push
           else

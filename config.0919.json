@@ -1,0 +1,43 @@
+{
+  "auth": {
+    "_comment": "クラウド(GitHub Actions)では認証情報はここに書かず、GitHub Secretsの RAKUTEN_SERVICE_SECRET / RAKUTEN_LICENSE_KEY から環境変数で注入する。",
+    "service_secret": "",
+    "license_key": ""
+  },
+  "coupon": {
+    "_comment": "9月後半イベント用の常設クーポン。2026-09-19 20:00 〜 2026-09-30 23:59(JST)。店内全商品・3000円以上で100円OFF。50枚を使い切ったら自動で再発行する。start_date は初回の仕込み発行用（再発行時は過去日になるので自動的に『今から90分後』が使われる）。end_date は毎回この日時で固定＝9/30でクーポンが残らない。",
+    "coupon_name": "3000円以上ご購入で100円OFF",
+    "coupon_code_prefix": "S100",
+    "discount_type": 1,
+    "discount_factor": 100,
+    "condition_type": "amount",
+    "min_purchase_amount": 3000,
+    "min_purchase_count": 2,
+    "issue_count": 50,
+    "item_type": 4,
+    "start_buffer_minutes": 0,
+    "member_avail_max_count": 1,
+    "combine_flag": 0,
+    "target_item_urls": [],
+    "amount_condition_type_code": 1,
+    "quantity_condition_type_code": 2,
+    "display_flag": 1,
+    "start_date": "2026-09-19T20:00:00+09:00",
+    "end_date": "2026-09-30T23:59:59+09:00"
+  },
+  "automation": {
+    "_comment": "再発行の歯止め設定。残りが reissue_threshold 枚以下になったら50枚を再発行する。",
+    "enabled": true,
+    "reissue_threshold": 10,
+    "max_reissue_per_day": 5,
+    "min_reissue_interval_minutes": 30
+  },
+  "notify": {
+    "enabled": false,
+    "smtp_host": "smtp.gmail.com",
+    "smtp_port": 587,
+    "smtp_user": "",
+    "smtp_password": "",
+    "to": "shibuya.koichi@gmail.com"
+  }
+}
