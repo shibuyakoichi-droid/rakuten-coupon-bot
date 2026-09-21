@@ -1,8 +1,8 @@
 {
-  "generation": 6,
-  "current_coupon_code": "ZDVC-EJRM-JF6J-KTQU",
-  "issued_at": "2026-09-21T15:49:09.299132+09:00",
-  "reissue_date": "2026-09-21",
+  "generation": 7,
+  "current_coupon_code": "OJHQ-J7DS-015U-SDBS",
+  "issued_at": "2026-09-22T01:43:54.091123+09:00",
+  "reissue_date": "2026-09-22",
   "reissue_count_today": 1,
   "history": [
     {
@@ -46,7 +46,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=RUpSTS1aRFZDLUpGNkotS1RRVQ--&rt=",
       "issued_at": "2026-09-21T15:49:09.299132+09:00",
       "reason": "残0枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 7,
+      "coupon_code": "OJHQ-J7DS-015U-SDBS",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=SjdEUy1PSkhRLTAxNVUtU0RCUw--&rt=",
+      "issued_at": "2026-09-22T01:43:54.091123+09:00",
+      "reason": "残2枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=RUpSTS1aRFZDLUpGNkotS1RRVQ--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=SjdEUy1PSkhRLTAxNVUtU0RCUw--&rt="
 }
