@@ -1,9 +1,9 @@
 {
-  "generation": 10,
-  "current_coupon_code": "M3TO-YTN5-G64L-UNBM",
-  "issued_at": "2026-09-23T23:44:03.791336+09:00",
-  "reissue_date": "2026-09-23",
-  "reissue_count_today": 2,
+  "generation": 11,
+  "current_coupon_code": "5SHO-QBRI-L2WD-1SZH",
+  "issued_at": "2026-09-24T20:14:24.179655+09:00",
+  "reissue_date": "2026-09-24",
+  "reissue_count_today": 1,
   "history": [
     {
       "generation": 1,
@@ -74,7 +74,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WVRONS1NM1RPLUc2NEwtVU5CTQ--&rt=",
       "issued_at": "2026-09-23T23:44:03.791336+09:00",
       "reason": "残0枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 11,
+      "coupon_code": "5SHO-QBRI-L2WD-1SZH",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=UUJSSS01U0hPLUwyV0QtMVNaSA--&rt=",
+      "issued_at": "2026-09-24T20:14:24.179655+09:00",
+      "reason": "残9枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WVRONS1NM1RPLUc2NEwtVU5CTQ--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=UUJSSS01U0hPLUwyV0QtMVNaSA--&rt="
 }
