@@ -1,0 +1,43 @@
+{
+  "auth": {
+    "_comment": "クラウド(GitHub Actions)では認証情報はここに書かず、GitHub Secretsの RAKUTEN_SERVICE_SECRET / RAKUTEN_LICENSE_KEY から環境変数で注入する。",
+    "service_secret": "",
+    "license_key": ""
+  },
+  "coupon": {
+    "_comment": "10月セール初日(10/2)用の常設クーポン。2026-10-02 00:00 〜 2026-10-02 23:59(JST)。店内全商品・3000円以上で10%OFF。渋谷さんが開始を10/3→10/2 0:00に変更(2026-09-28)。10/3以降は先に発行済みの config.1003.json が引き継ぐ（発行済みクーポンは開始日時を変えられないため、初日だけ別クーポンにした）。",
+    "coupon_name": "3000円以上ご購入で10%OFF",
+    "coupon_code_prefix": "A3000P10",
+    "discount_type": 2,
+    "discount_factor": 10,
+    "condition_type": "amount",
+    "min_purchase_amount": 3000,
+    "min_purchase_count": 2,
+    "issue_count": 50,
+    "item_type": 4,
+    "start_buffer_minutes": 0,
+    "member_avail_max_count": 1,
+    "combine_flag": 0,
+    "target_item_urls": [],
+    "amount_condition_type_code": 1,
+    "quantity_condition_type_code": 2,
+    "display_flag": 1,
+    "start_date": "2026-10-02T00:00:00+09:00",
+    "end_date": "2026-10-02T23:59:59+09:00"
+  },
+  "automation": {
+    "_comment": "再発行の歯止め設定。残りが reissue_threshold 枚以下になったら50枚を再発行する。",
+    "enabled": true,
+    "reissue_threshold": 10,
+    "max_reissue_per_day": 10,
+    "min_reissue_interval_minutes": 30
+  },
+  "notify": {
+    "enabled": false,
+    "smtp_host": "smtp.gmail.com",
+    "smtp_port": 587,
+    "smtp_user": "",
+    "smtp_password": "",
+    "to": "shibuya.koichi@gmail.com"
+  }
+}

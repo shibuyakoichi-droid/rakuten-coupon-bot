@@ -1,0 +1,17 @@
+{
+  "generation": 1,
+  "current_coupon_code": "FS9S-WCDH-MX7G-WTII",
+  "issued_at": "2026-09-28T17:08:10.077278+09:00",
+  "reissue_date": "2026-09-28",
+  "reissue_count_today": 1,
+  "history": [
+    {
+      "generation": 1,
+      "coupon_code": "FS9S-WCDH-MX7G-WTII",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=V0NESC1GUzlTLU1YN0ctV1RJSQ--&rt=",
+      "issued_at": "2026-09-28T17:08:10.077278+09:00",
+      "reason": "手動強制発行(--force-issue)"
+    }
+  ],
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=V0NESC1GUzlTLU1YN0ctV1RJSQ--&rt="
+}
