@@ -1,0 +1,17 @@
+{
+  "generation": 1,
+  "current_coupon_code": "C55R-DJAQ-337P-Q6UO",
+  "issued_at": "2026-09-28T15:22:40.793192+09:00",
+  "reissue_date": "2026-09-28",
+  "reissue_count_today": 1,
+  "history": [
+    {
+      "generation": 1,
+      "coupon_code": "C55R-DJAQ-337P-Q6UO",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=REpBUS1DNTVSLTMzN1AtUTZVTw--&rt=",
+      "issued_at": "2026-09-28T15:22:40.793192+09:00",
+      "reason": "手動強制発行(--force-issue)"
+    }
+  ],
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=REpBUS1DNTVSLTMzN1AtUTZVTw--&rt="
+}
