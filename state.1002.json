@@ -1,7 +1,7 @@
 {
-  "generation": 1,
-  "current_coupon_code": "FS9S-WCDH-MX7G-WTII",
-  "issued_at": "2026-09-28T17:08:10.077278+09:00",
+  "generation": 2,
+  "current_coupon_code": "2BAT-E75V-M2SF-KVKQ",
+  "issued_at": "2026-10-02T14:25:58.014934+09:00",
   "reissue_date": "2026-09-28",
   "reissue_count_today": 1,
   "history": [
@@ -11,7 +11,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=V0NESC1GUzlTLU1YN0ctV1RJSQ--&rt=",
       "issued_at": "2026-09-28T17:08:10.077278+09:00",
       "reason": "手動強制発行(--force-issue)"
+    },
+    {
+      "generation": 2,
+      "coupon_code": "2BAT-E75V-M2SF-KVKQ",
+      "pc_get_url": null,
+      "issued_at": "2026-10-02T14:25:58.014934+09:00",
+      "reason": "渋谷さんがRMSで手動発行（ボット未発行のため）→監視対象に登録"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=V0NESC1GUzlTLU1YN0ctV1RJSQ--&rt="
+  "current_pc_get_url": null
 }
