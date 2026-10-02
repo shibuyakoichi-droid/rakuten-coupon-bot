@@ -8,6 +8,8 @@ on:
     - cron: "0,15,30,45 11-14 * * *"      # JST 20:00〜23:59 を15分間隔
     - cron: "0,30 0-10,15-23 * * *"       # JST それ以外を30分間隔
   workflow_dispatch:                        # GitHubの画面／CLIから手動実行（通常チェック）
+                                            # ＋外部タイマー(cron-job.org)が15分おきにここを叩く（2026-10-02〜）
+                                            #   GitHubのscheduleは1日5〜7回しか動かなかったため。scheduleは予備として残す
 
 # state.json をコミットで保存し直すために書き込み権限が必要
 permissions:
@@ -24,6 +26,10 @@ jobs:
     steps:
       - name: リポジトリを取得
         uses: actions/checkout@v4
+        with:
+          # 起動した時点の版ではなく「今の最新版」を取る。順番待ちしていた実行が
+          # 1つ前の実行が保存したstateを読み落として二重発行するのを防ぐ（2026-10-02）
+          ref: master
 
       - name: Python を準備
         uses: actions/setup-python@v5
