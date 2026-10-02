@@ -1,8 +1,8 @@
 {
-  "generation": 2,
-  "current_coupon_code": "2BAT-E75V-M2SF-KVKQ",
-  "issued_at": "2026-10-02T14:25:58.014934+09:00",
-  "reissue_date": "2026-09-28",
+  "generation": 3,
+  "current_coupon_code": "ECOA-L18P-BM74-OLBW",
+  "issued_at": "2026-10-02T19:30:40.676351+09:00",
+  "reissue_date": "2026-10-02",
   "reissue_count_today": 1,
   "history": [
     {
@@ -18,7 +18,14 @@
       "pc_get_url": null,
       "issued_at": "2026-10-02T14:25:58.014934+09:00",
       "reason": "渋谷さんがRMSで手動発行（ボット未発行のため）→監視対象に登録"
+    },
+    {
+      "generation": 3,
+      "coupon_code": "ECOA-L18P-BM74-OLBW",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=TDE4UC1FQ09BLUJNNzQtT0xCVw--&rt=",
+      "issued_at": "2026-10-02T19:30:40.676351+09:00",
+      "reason": "残10枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": null
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=TDE4UC1FQ09BLUJNNzQtT0xCVw--&rt="
 }
