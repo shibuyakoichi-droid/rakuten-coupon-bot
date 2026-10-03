@@ -1,9 +1,9 @@
 {
-  "generation": 3,
-  "current_coupon_code": "5UTB-DUUX-EAU9-67L8",
-  "issued_at": "2026-10-03T18:30:38.941106+09:00",
+  "generation": 4,
+  "current_coupon_code": "PG6D-WEQK-7DLS-VNNG",
+  "issued_at": "2026-10-03T23:15:30.462437+09:00",
   "reissue_date": "2026-10-03",
-  "reissue_count_today": 2,
+  "reissue_count_today": 3,
   "history": [
     {
       "generation": 1,
@@ -25,7 +25,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=RFVVWC01VVRCLUVBVTktNjdMOA--&rt=",
       "issued_at": "2026-10-03T18:30:38.941106+09:00",
       "reason": "残8枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 4,
+      "coupon_code": "PG6D-WEQK-7DLS-VNNG",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=V0VRSy1QRzZELTdETFMtVk5ORw--&rt=",
+      "issued_at": "2026-10-03T23:15:30.462437+09:00",
+      "reason": "残8枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=RFVVWC01VVRCLUVBVTktNjdMOA--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=V0VRSy1QRzZELTdETFMtVk5ORw--&rt="
 }
