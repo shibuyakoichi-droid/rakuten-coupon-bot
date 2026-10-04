@@ -1,9 +1,9 @@
 {
-  "generation": 7,
-  "current_coupon_code": "G1QV-PXTG-83VA-IM5M",
-  "issued_at": "2026-10-04T20:15:28.873196+09:00",
+  "generation": 8,
+  "current_coupon_code": "WPVX-NUGQ-TC6V-OF7O",
+  "issued_at": "2026-10-04T22:45:29.659403+09:00",
   "reissue_date": "2026-10-04",
-  "reissue_count_today": 3,
+  "reissue_count_today": 4,
   "history": [
     {
       "generation": 1,
@@ -53,7 +53,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=UFhURy1HMVFWLTgzVkEtSU01TQ--&rt=",
       "issued_at": "2026-10-04T20:15:28.873196+09:00",
       "reason": "残0枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 8,
+      "coupon_code": "WPVX-NUGQ-TC6V-OF7O",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=TlVHUS1XUFZYLVRDNlYtT0Y3Tw--&rt=",
+      "issued_at": "2026-10-04T22:45:29.659403+09:00",
+      "reason": "残9枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=UFhURy1HMVFWLTgzVkEtSU01TQ--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=TlVHUS1XUFZYLVRDNlYtT0Y3Tw--&rt="
 }
