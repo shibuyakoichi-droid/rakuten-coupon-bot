@@ -1,9 +1,9 @@
 {
-  "generation": 6,
-  "current_coupon_code": "NY5K-FW4Q-QANO-XNOA",
-  "issued_at": "2026-10-04T18:00:52.744545+09:00",
+  "generation": 7,
+  "current_coupon_code": "G1QV-PXTG-83VA-IM5M",
+  "issued_at": "2026-10-04T20:15:28.873196+09:00",
   "reissue_date": "2026-10-04",
-  "reissue_count_today": 2,
+  "reissue_count_today": 3,
   "history": [
     {
       "generation": 1,
@@ -46,7 +46,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=Rlc0US1OWTVLLVFBTk8tWE5PQQ--&rt=",
       "issued_at": "2026-10-04T18:00:52.744545+09:00",
       "reason": "残8枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 7,
+      "coupon_code": "G1QV-PXTG-83VA-IM5M",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=UFhURy1HMVFWLTgzVkEtSU01TQ--&rt=",
+      "issued_at": "2026-10-04T20:15:28.873196+09:00",
+      "reason": "残0枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=Rlc0US1OWTVLLVFBTk8tWE5PQQ--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=UFhURy1HMVFWLTgzVkEtSU01TQ--&rt="
 }
