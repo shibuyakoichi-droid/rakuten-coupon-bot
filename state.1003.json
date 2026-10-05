@@ -1,9 +1,9 @@
 {
-  "generation": 15,
-  "current_coupon_code": "N8SF-8KGE-1563-FTYU",
-  "issued_at": "2026-10-05T21:45:35.209532+09:00",
-  "reissue_date": "2026-10-05",
-  "reissue_count_today": 7,
+  "generation": 16,
+  "current_coupon_code": "TDGO-VXZE-U9LT-7YJY",
+  "issued_at": "2026-10-06T00:00:59.068348+09:00",
+  "reissue_date": "2026-10-06",
+  "reissue_count_today": 1,
   "history": [
     {
       "generation": 1,
@@ -109,7 +109,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=OEtHRS1OOFNGLTE1NjMtRlRZVQ--&rt=",
       "issued_at": "2026-10-05T21:45:35.209532+09:00",
       "reason": "残10枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 16,
+      "coupon_code": "TDGO-VXZE-U9LT-7YJY",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=VlhaRS1UREdPLVU5TFQtN1lKWQ--&rt=",
+      "issued_at": "2026-10-06T00:00:59.068348+09:00",
+      "reason": "残0枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=OEtHRS1OOFNGLTE1NjMtRlRZVQ--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=VlhaRS1UREdPLVU5TFQtN1lKWQ--&rt="
 }
