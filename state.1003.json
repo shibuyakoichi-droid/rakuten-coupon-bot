@@ -1,9 +1,9 @@
 {
-  "generation": 12,
-  "current_coupon_code": "MOFF-KHMT-EIYA-UALZ",
-  "issued_at": "2026-10-05T13:30:41.020282+09:00",
+  "generation": 13,
+  "current_coupon_code": "J8LY-JFJD-9VAB-ZQNV",
+  "issued_at": "2026-10-05T16:30:41.757724+09:00",
   "reissue_date": "2026-10-05",
-  "reissue_count_today": 4,
+  "reissue_count_today": 5,
   "history": [
     {
       "generation": 1,
@@ -88,7 +88,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=S0hNVC1NT0ZGLUVJWUEtVUFMWg--&rt=",
       "issued_at": "2026-10-05T13:30:41.020282+09:00",
       "reason": "残10枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 13,
+      "coupon_code": "J8LY-JFJD-9VAB-ZQNV",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=SkZKRC1KOExZLTlWQUItWlFOVg--&rt=",
+      "issued_at": "2026-10-05T16:30:41.757724+09:00",
+      "reason": "残9枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=S0hNVC1NT0ZGLUVJWUEtVUFMWg--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=SkZKRC1KOExZLTlWQUItWlFOVg--&rt="
 }
