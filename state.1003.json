@@ -1,9 +1,9 @@
 {
-  "generation": 28,
-  "current_coupon_code": "K3HL-PHB7-7OLO-I6SB",
-  "issued_at": "2026-10-08T22:55:31.341280+09:00",
-  "reissue_date": "2026-10-08",
-  "reissue_count_today": 5,
+  "generation": 29,
+  "current_coupon_code": "TXEO-EELI-7N4U-TFCJ",
+  "issued_at": "2026-10-09T02:00:57.736170+09:00",
+  "reissue_date": "2026-10-09",
+  "reissue_count_today": 1,
   "history": [
     {
       "generation": 1,
@@ -200,7 +200,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=UEhCNy1LM0hMLTdPTE8tSTZTQg--&rt=",
       "issued_at": "2026-10-08T22:55:31.341280+09:00",
       "reason": "残8枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 29,
+      "coupon_code": "TXEO-EELI-7N4U-TFCJ",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=RUVMSS1UWEVPLTdONFUtVEZDSg--&rt=",
+      "issued_at": "2026-10-09T02:00:57.736170+09:00",
+      "reason": "残9枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=UEhCNy1LM0hMLTdPTE8tSTZTQg--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=RUVMSS1UWEVPLTdONFUtVEZDSg--&rt="
 }
