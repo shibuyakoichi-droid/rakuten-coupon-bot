@@ -1,9 +1,9 @@
 {
-  "generation": 26,
-  "current_coupon_code": "DN10-GUA7-B4VE-KI9L",
-  "issued_at": "2026-10-08T14:45:33.695794+09:00",
+  "generation": 27,
+  "current_coupon_code": "QOGK-HPCS-LREP-0AI3",
+  "issued_at": "2026-10-08T20:15:37.245809+09:00",
   "reissue_date": "2026-10-08",
-  "reissue_count_today": 3,
+  "reissue_count_today": 4,
   "history": [
     {
       "generation": 1,
@@ -186,7 +186,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=R1VBNy1ETjEwLUI0VkUtS0k5TA--&rt=",
       "issued_at": "2026-10-08T14:45:33.695794+09:00",
       "reason": "残10枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 27,
+      "coupon_code": "QOGK-HPCS-LREP-0AI3",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=SFBDUy1RT0dLLUxSRVAtMEFJMw--&rt=",
+      "issued_at": "2026-10-08T20:15:37.245809+09:00",
+      "reason": "残9枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=R1VBNy1ETjEwLUI0VkUtS0k5TA--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=SFBDUy1RT0dLLUxSRVAtMEFJMw--&rt="
 }
