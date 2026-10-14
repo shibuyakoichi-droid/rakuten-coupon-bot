@@ -1,0 +1,17 @@
+{
+  "generation": 1,
+  "current_coupon_code": "OEQI-XPN9-TKY4-0GFZ",
+  "issued_at": "2026-10-14T14:25:50.114110+09:00",
+  "reissue_date": "2026-10-14",
+  "reissue_count_today": 1,
+  "history": [
+    {
+      "generation": 1,
+      "coupon_code": "OEQI-XPN9-TKY4-0GFZ",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WFBOOS1PRVFJLVRLWTQtMEdGWg--&rt=",
+      "issued_at": "2026-10-14T14:25:50.114110+09:00",
+      "reason": "手動強制発行(--force-issue)"
+    }
+  ],
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WFBOOS1PRVFJLVRLWTQtMEdGWg--&rt="
+}
