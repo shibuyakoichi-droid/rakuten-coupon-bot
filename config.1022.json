@@ -5,11 +5,11 @@
     "license_key": ""
   },
   "coupon": {
-    "_comment": "10月後半セール用の常設クーポン（案・未発行）。2026-10-22 00:00 〜 2026-10-30 23:59(JST)。店内全商品・3000円以上で10%OFF。前半(config.1003.json)と同じ条件。50枚を使い切ったら自動で再発行。🚨発行は渋谷さんの了承後に --force-issue で先出しし、coupon-bot.yml に期間を足してから。",
-    "coupon_name": "3000円以上ご購入で10%OFF",
-    "coupon_code_prefix": "A3000P10",
-    "discount_type": 2,
-    "discount_factor": 10,
+    "_comment": "10月後半セール用の常設クーポン（未発行）。2026-10-22 00:00 〜 2026-10-30 23:59(JST)。店内全商品・3000円以上で100円OFF（渋谷さんの指示 2026-10-14：前半の10%OFFから変更）。50枚を使い切ったら自動で再発行。🚨発行は --force-issue で先出しし、coupon-bot.yml に期間を足してから。",
+    "coupon_name": "3000円以上ご購入で100円OFF",
+    "coupon_code_prefix": "S100",
+    "discount_type": 1,
+    "discount_factor": 100,
     "condition_type": "amount",
     "min_purchase_amount": 3000,
     "min_purchase_count": 2,
