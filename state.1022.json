@@ -1,9 +1,9 @@
 {
-  "generation": 3,
-  "current_coupon_code": "MTGO-LHP3-N3SJ-3MSC",
-  "issued_at": "2026-10-22T19:15:32.358401+09:00",
-  "reissue_date": "2026-10-22",
-  "reissue_count_today": 2,
+  "generation": 4,
+  "current_coupon_code": "ARP5-HFQM-1H4R-4UDR",
+  "issued_at": "2026-10-23T09:15:32.309418+09:00",
+  "reissue_date": "2026-10-23",
+  "reissue_count_today": 1,
   "history": [
     {
       "generation": 1,
@@ -25,7 +25,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=TEhQMy1NVEdPLU4zU0otM01TQw--&rt=",
       "issued_at": "2026-10-22T19:15:32.358401+09:00",
       "reason": "残10枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 4,
+      "coupon_code": "ARP5-HFQM-1H4R-4UDR",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=SEZRTS1BUlA1LTFINFItNFVEUg--&rt=",
+      "issued_at": "2026-10-23T09:15:32.309418+09:00",
+      "reason": "残10枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=TEhQMy1NVEdPLU4zU0otM01TQw--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=SEZRTS1BUlA1LTFINFItNFVEUg--&rt="
 }
