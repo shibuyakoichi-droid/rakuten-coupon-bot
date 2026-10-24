@@ -1,9 +1,9 @@
 {
-  "generation": 8,
-  "current_coupon_code": "DDEV-XL2Y-TLYP-DFMD",
-  "issued_at": "2026-10-25T00:00:55.699670+09:00",
+  "generation": 9,
+  "current_coupon_code": "M8BL-O0BF-VXFN-VIQL",
+  "issued_at": "2026-10-25T08:00:52.284221+09:00",
   "reissue_date": "2026-10-25",
-  "reissue_count_today": 1,
+  "reissue_count_today": 2,
   "history": [
     {
       "generation": 1,
@@ -60,7 +60,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WEwyWS1EREVWLVRMWVAtREZNRA--&rt=",
       "issued_at": "2026-10-25T00:00:55.699670+09:00",
       "reason": "残7枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 9,
+      "coupon_code": "M8BL-O0BF-VXFN-VIQL",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=TzBCRi1NOEJMLVZYRk4tVklRTA--&rt=",
+      "issued_at": "2026-10-25T08:00:52.284221+09:00",
+      "reason": "残9枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WEwyWS1EREVWLVRMWVAtREZNRA--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=TzBCRi1NOEJMLVZYRk4tVklRTA--&rt="
 }
