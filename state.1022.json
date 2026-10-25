@@ -1,9 +1,9 @@
 {
-  "generation": 12,
-  "current_coupon_code": "YDMX-YMM1-3IWD-Y1UQ",
-  "issued_at": "2026-10-25T20:00:52.513413+09:00",
+  "generation": 13,
+  "current_coupon_code": "W663-GSCL-TNKD-KHYL",
+  "issued_at": "2026-10-25T22:30:42.078632+09:00",
   "reissue_date": "2026-10-25",
-  "reissue_count_today": 5,
+  "reissue_count_today": 6,
   "history": [
     {
       "generation": 1,
@@ -88,7 +88,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WU1NMS1ZRE1YLTNJV0QtWTFVUQ--&rt=",
       "issued_at": "2026-10-25T20:00:52.513413+09:00",
       "reason": "残6枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 13,
+      "coupon_code": "W663-GSCL-TNKD-KHYL",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=R1NDTC1XNjYzLVROS0QtS0hZTA--&rt=",
+      "issued_at": "2026-10-25T22:30:42.078632+09:00",
+      "reason": "残10枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WU1NMS1ZRE1YLTNJV0QtWTFVUQ--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=R1NDTC1XNjYzLVROS0QtS0hZTA--&rt="
 }
