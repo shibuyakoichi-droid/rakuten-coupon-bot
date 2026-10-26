@@ -1,9 +1,9 @@
 {
-  "generation": 16,
-  "current_coupon_code": "UZ4A-VMAG-KD97-NAUL",
-  "issued_at": "2026-10-26T21:45:31.171468+09:00",
-  "reissue_date": "2026-10-26",
-  "reissue_count_today": 3,
+  "generation": 17,
+  "current_coupon_code": "VTV8-31OB-ZSD7-WSTN",
+  "issued_at": "2026-10-27T06:00:53.610158+09:00",
+  "reissue_date": "2026-10-27",
+  "reissue_count_today": 1,
   "history": [
     {
       "generation": 1,
@@ -116,7 +116,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=Vk1BRy1VWjRBLUtEOTctTkFVTA--&rt=",
       "issued_at": "2026-10-26T21:45:31.171468+09:00",
       "reason": "残9枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 17,
+      "coupon_code": "VTV8-31OB-ZSD7-WSTN",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=MzFPQi1WVFY4LVpTRDctV1NUTg--&rt=",
+      "issued_at": "2026-10-27T06:00:53.610158+09:00",
+      "reason": "残9枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=Vk1BRy1VWjRBLUtEOTctTkFVTA--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=MzFPQi1WVFY4LVpTRDctV1NUTg--&rt="
 }
