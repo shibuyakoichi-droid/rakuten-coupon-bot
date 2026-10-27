@@ -1,9 +1,9 @@
 {
-  "generation": 17,
-  "current_coupon_code": "VTV8-31OB-ZSD7-WSTN",
-  "issued_at": "2026-10-27T06:00:53.610158+09:00",
+  "generation": 18,
+  "current_coupon_code": "6BBL-75KU-QOLD-DWJ3",
+  "issued_at": "2026-10-27T11:30:45.677860+09:00",
   "reissue_date": "2026-10-27",
-  "reissue_count_today": 1,
+  "reissue_count_today": 2,
   "history": [
     {
       "generation": 1,
@@ -123,7 +123,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=MzFPQi1WVFY4LVpTRDctV1NUTg--&rt=",
       "issued_at": "2026-10-27T06:00:53.610158+09:00",
       "reason": "残9枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 18,
+      "coupon_code": "6BBL-75KU-QOLD-DWJ3",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=NzVLVS02QkJMLVFPTEQtRFdKMw--&rt=",
+      "issued_at": "2026-10-27T11:30:45.677860+09:00",
+      "reason": "残9枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=MzFPQi1WVFY4LVpTRDctV1NUTg--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=NzVLVS02QkJMLVFPTEQtRFdKMw--&rt="
 }
