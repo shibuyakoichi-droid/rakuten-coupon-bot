@@ -1,9 +1,9 @@
 {
-  "generation": 20,
-  "current_coupon_code": "DJSA-Y7DL-OZOE-GTGY",
-  "issued_at": "2026-10-28T11:30:42.008230+09:00",
+  "generation": 21,
+  "current_coupon_code": "VAIS-Q3GZ-NGCL-N2LK",
+  "issued_at": "2026-10-28T20:00:54.293719+09:00",
   "reissue_date": "2026-10-28",
-  "reissue_count_today": 1,
+  "reissue_count_today": 2,
   "history": [
     {
       "generation": 1,
@@ -144,7 +144,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WTdETC1ESlNBLU9aT0UtR1RHWQ--&rt=",
       "issued_at": "2026-10-28T11:30:42.008230+09:00",
       "reason": "残10枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 21,
+      "coupon_code": "VAIS-Q3GZ-NGCL-N2LK",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=UTNHWi1WQUlTLU5HQ0wtTjJMSw--&rt=",
+      "issued_at": "2026-10-28T20:00:54.293719+09:00",
+      "reason": "残10枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WTdETC1ESlNBLU9aT0UtR1RHWQ--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=UTNHWi1WQUlTLU5HQ0wtTjJMSw--&rt="
 }
