@@ -1,9 +1,9 @@
 {
-  "generation": 24,
-  "current_coupon_code": "VZZP-XJUH-J5T2-AVGP",
-  "issued_at": "2026-10-29T20:00:52.293703+09:00",
-  "reissue_date": "2026-10-29",
-  "reissue_count_today": 3,
+  "generation": 25,
+  "current_coupon_code": "TO5K-MNCA-KPUX-ES6T",
+  "issued_at": "2026-10-30T05:45:30.589226+09:00",
+  "reissue_date": "2026-10-30",
+  "reissue_count_today": 1,
   "history": [
     {
       "generation": 1,
@@ -172,7 +172,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WEpVSC1WWlpQLUo1VDItQVZHUA--&rt=",
       "issued_at": "2026-10-29T20:00:52.293703+09:00",
       "reason": "残9枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 25,
+      "coupon_code": "TO5K-MNCA-KPUX-ES6T",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=TU5DQS1UTzVLLUtQVVgtRVM2VA--&rt=",
+      "issued_at": "2026-10-30T05:45:30.589226+09:00",
+      "reason": "残10枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WEpVSC1WWlpQLUo1VDItQVZHUA--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=TU5DQS1UTzVLLUtQVVgtRVM2VA--&rt="
 }
