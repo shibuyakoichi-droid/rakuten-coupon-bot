@@ -45,6 +45,8 @@ jobs:
       #   2026-09-19 20:00〜09-30 23:59 = 3000円以上で100円OFF（9月後半イベント）
       #   2026-10-02 00:00〜10-02 23:59 = 3000円以上で10%OFF（10月セール初日）★次
       #   2026-10-03 00:00〜10-10 23:59 = 3000円以上で10%OFF（10月セール）
+      #   2026-10-22 00:00〜10-30 23:59 = 3000円以上で100円OFF（10月後半セール）
+      #   2026-11-02 00:00〜11-11 23:59 = 3000円以上で100円OFF（11月マラソン）
       #   それ以外                       = 発行しない
       # 期間を変えるときは下の数字（YYYYMMDDHHMM）だけ直す。
       - name: 期間から設定を選ぶ
@@ -59,6 +61,8 @@ jobs:
           OCT_END=202610102359
           OCT2_START=202610220000
           OCT2_END=202610302359
+          NOV1_START=202611020000
+          NOV1_END=202611112359
           if [ "$NOW" -ge "$EVENT_START" ] && [ "$NOW" -le "$EVENT_END" ]; then
             echo "cfg=config.0919.json" >> $GITHUB_OUTPUT
             echo "st=state.0919.json"   >> $GITHUB_OUTPUT
@@ -75,6 +79,10 @@ jobs:
             echo "cfg=config.1022.json" >> $GITHUB_OUTPUT
             echo "st=state.1022.json"   >> $GITHUB_OUTPUT
             echo "label=3000円以上で100円OFF（10月後半セール）" >> $GITHUB_OUTPUT
+          elif [ "$NOW" -ge "$NOV1_START" ] && [ "$NOW" -le "$NOV1_END" ]; then
+            echo "cfg=config.1102.json" >> $GITHUB_OUTPUT
+            echo "st=state.1102.json"   >> $GITHUB_OUTPUT
+            echo "label=3000円以上で100円OFF（11月マラソン）" >> $GITHUB_OUTPUT
           else
             echo "cfg="                  >> $GITHUB_OUTPUT
             echo "label=期間外のため発行しません" >> $GITHUB_OUTPUT
@@ -97,10 +105,10 @@ jobs:
       - name: 発行状態(state)を保存し直す
         if: steps.pick.outputs.cfg != ''
         run: |
-          if [ -n "$(git status --porcelain state.json state.ss09.json state.0919.json state.1002.json state.1003.json state.1022.json)" ]; then
+          if [ -n "$(git status --porcelain state.json state.ss09.json state.0919.json state.1002.json state.1003.json state.1022.json state.1102.json)" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add state.json state.ss09.json state.0919.json state.1002.json state.1003.json state.1022.json
+            git add state.json state.ss09.json state.0919.json state.1002.json state.1003.json state.1022.json state.1102.json
             git commit -m "update coupon state [skip ci]"
             git push
           else
