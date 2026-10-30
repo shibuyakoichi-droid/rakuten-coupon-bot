@@ -1,9 +1,9 @@
 {
-  "generation": 25,
-  "current_coupon_code": "TO5K-MNCA-KPUX-ES6T",
-  "issued_at": "2026-10-30T05:45:30.589226+09:00",
+  "generation": 26,
+  "current_coupon_code": "OPAV-C4SS-F0O1-LMIZ",
+  "issued_at": "2026-10-30T10:00:48.840275+09:00",
   "reissue_date": "2026-10-30",
-  "reissue_count_today": 1,
+  "reissue_count_today": 2,
   "history": [
     {
       "generation": 1,
@@ -179,7 +179,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=TU5DQS1UTzVLLUtQVVgtRVM2VA--&rt=",
       "issued_at": "2026-10-30T05:45:30.589226+09:00",
       "reason": "残10枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 26,
+      "coupon_code": "OPAV-C4SS-F0O1-LMIZ",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=QzRTUy1PUEFWLUYwTzEtTE1JWg--&rt=",
+      "issued_at": "2026-10-30T10:00:48.840275+09:00",
+      "reason": "残8枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=TU5DQS1UTzVLLUtQVVgtRVM2VA--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=QzRTUy1PUEFWLUYwTzEtTE1JWg--&rt="
 }
