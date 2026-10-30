@@ -1,9 +1,9 @@
 {
-  "generation": 27,
-  "current_coupon_code": "8F3Y-OZRU-IXLB-SATW",
-  "issued_at": "2026-10-30T15:15:30.874508+09:00",
+  "generation": 28,
+  "current_coupon_code": "2MMO-IZLE-ZPBV-FI3V",
+  "issued_at": "2026-10-30T20:30:48.621150+09:00",
   "reissue_date": "2026-10-30",
-  "reissue_count_today": 3,
+  "reissue_count_today": 4,
   "history": [
     {
       "generation": 1,
@@ -193,7 +193,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=T1pSVS04RjNZLUlYTEItU0FUVw--&rt=",
       "issued_at": "2026-10-30T15:15:30.874508+09:00",
       "reason": "残10枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 28,
+      "coupon_code": "2MMO-IZLE-ZPBV-FI3V",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=SVpMRS0yTU1PLVpQQlYtRkkzVg--&rt=",
+      "issued_at": "2026-10-30T20:30:48.621150+09:00",
+      "reason": "残9枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=T1pSVS04RjNZLUlYTEItU0FUVw--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=SVpMRS0yTU1PLVpQQlYtRkkzVg--&rt="
 }
