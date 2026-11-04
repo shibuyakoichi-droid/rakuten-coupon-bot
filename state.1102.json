@@ -1,9 +1,9 @@
 {
-  "generation": 9,
-  "current_coupon_code": "FHNA-OWWM-AUF6-FMRP",
-  "issued_at": "2026-11-05T00:30:46.352087+09:00",
+  "generation": 10,
+  "current_coupon_code": "F8LI-6KEY-ZHTX-7IXX",
+  "issued_at": "2026-11-05T08:00:46.091575+09:00",
   "reissue_date": "2026-11-05",
-  "reissue_count_today": 1,
+  "reissue_count_today": 2,
   "history": [
     {
       "generation": 1,
@@ -67,7 +67,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=T1dXTS1GSE5BLUFVRjYtRk1SUA--&rt=",
       "issued_at": "2026-11-05T00:30:46.352087+09:00",
       "reason": "残5枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 10,
+      "coupon_code": "F8LI-6KEY-ZHTX-7IXX",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=NktFWS1GOExJLVpIVFgtN0lYWA--&rt=",
+      "issued_at": "2026-11-05T08:00:46.091575+09:00",
+      "reason": "残8枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=T1dXTS1GSE5BLUFVRjYtRk1SUA--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=NktFWS1GOExJLVpIVFgtN0lYWA--&rt="
 }
