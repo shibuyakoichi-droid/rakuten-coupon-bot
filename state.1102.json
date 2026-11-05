@@ -1,9 +1,9 @@
 {
-  "generation": 12,
-  "current_coupon_code": "E09U-GKDQ-VNVU-UVL0",
-  "issued_at": "2026-11-05T14:15:27.671309+09:00",
+  "generation": 13,
+  "current_coupon_code": "NECM-WBLH-Q2GP-XCZH",
+  "issued_at": "2026-11-05T18:00:51.970376+09:00",
   "reissue_date": "2026-11-05",
-  "reissue_count_today": 4,
+  "reissue_count_today": 5,
   "history": [
     {
       "generation": 1,
@@ -88,7 +88,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=R0tEUS1FMDlVLVZOVlUtVVZMMA--&rt=",
       "issued_at": "2026-11-05T14:15:27.671309+09:00",
       "reason": "残8枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 13,
+      "coupon_code": "NECM-WBLH-Q2GP-XCZH",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=V0JMSC1ORUNNLVEyR1AtWENaSA--&rt=",
+      "issued_at": "2026-11-05T18:00:51.970376+09:00",
+      "reason": "残8枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=R0tEUS1FMDlVLVZOVlUtVVZMMA--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=V0JMSC1ORUNNLVEyR1AtWENaSA--&rt="
 }
