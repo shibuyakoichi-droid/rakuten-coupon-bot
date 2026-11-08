@@ -1,9 +1,9 @@
 {
-  "generation": 21,
-  "current_coupon_code": "WHRO-HKNE-GHHR-L58N",
-  "issued_at": "2026-11-08T12:15:33.261638+09:00",
+  "generation": 22,
+  "current_coupon_code": "UFPA-GR3V-TX0Z-MN8O",
+  "issued_at": "2026-11-08T20:00:50.103683+09:00",
   "reissue_date": "2026-11-08",
-  "reissue_count_today": 1,
+  "reissue_count_today": 2,
   "history": [
     {
       "generation": 1,
@@ -151,7 +151,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=SEtORS1XSFJPLUdISFItTDU4Tg--&rt=",
       "issued_at": "2026-11-08T12:15:33.261638+09:00",
       "reason": "残10枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 22,
+      "coupon_code": "UFPA-GR3V-TX0Z-MN8O",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=R1IzVi1VRlBBLVRYMFotTU44Tw--&rt=",
+      "issued_at": "2026-11-08T20:00:50.103683+09:00",
+      "reason": "残7枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=SEtORS1XSFJPLUdISFItTDU4Tg--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=R1IzVi1VRlBBLVRYMFotTU44Tw--&rt="
 }
