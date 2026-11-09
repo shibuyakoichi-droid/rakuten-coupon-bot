@@ -1,9 +1,9 @@
 {
-  "generation": 23,
-  "current_coupon_code": "BPOV-PJNS-1MC5-HA9Z",
-  "issued_at": "2026-11-09T07:30:43.561273+09:00",
+  "generation": 24,
+  "current_coupon_code": "F0BM-Z8XR-LPAE-BCH3",
+  "issued_at": "2026-11-09T13:15:33.559610+09:00",
   "reissue_date": "2026-11-09",
-  "reissue_count_today": 1,
+  "reissue_count_today": 2,
   "history": [
     {
       "generation": 1,
@@ -165,7 +165,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=UEpOUy1CUE9WLTFNQzUtSEE5Wg--&rt=",
       "issued_at": "2026-11-09T07:30:43.561273+09:00",
       "reason": "残9枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 24,
+      "coupon_code": "F0BM-Z8XR-LPAE-BCH3",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WjhYUi1GMEJNLUxQQUUtQkNIMw--&rt=",
+      "issued_at": "2026-11-09T13:15:33.559610+09:00",
+      "reason": "残10枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=UEpOUy1CUE9WLTFNQzUtSEE5Wg--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WjhYUi1GMEJNLUxQQUUtQkNIMw--&rt="
 }
