@@ -1,9 +1,9 @@
 {
-  "generation": 31,
-  "current_coupon_code": "CMJH-S3BX-WEWU-MRNN",
-  "issued_at": "2026-11-10T21:45:31.927418+09:00",
+  "generation": 32,
+  "current_coupon_code": "IW62-7UOR-FZZ4-GFM2",
+  "issued_at": "2026-11-10T23:45:33.083989+09:00",
   "reissue_date": "2026-11-10",
-  "reissue_count_today": 6,
+  "reissue_count_today": 7,
   "history": [
     {
       "generation": 1,
@@ -221,7 +221,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=UzNCWC1DTUpILVdFV1UtTVJOTg--&rt=",
       "issued_at": "2026-11-10T21:45:31.927418+09:00",
       "reason": "残3枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 32,
+      "coupon_code": "IW62-7UOR-FZZ4-GFM2",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=N1VPUi1JVzYyLUZaWjQtR0ZNMg--&rt=",
+      "issued_at": "2026-11-10T23:45:33.083989+09:00",
+      "reason": "残4枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=UzNCWC1DTUpILVdFV1UtTVJOTg--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=N1VPUi1JVzYyLUZaWjQtR0ZNMg--&rt="
 }
