@@ -1,0 +1,180 @@
+{
+  "_comment": "BF(11/18〜26)の早起き日替わり99%OFF。各日6:00〜23:59・50枚・1点から・1人1枚・併用不可・全体公開・再発行なし。19/22/25=nokotta-asikubi・20/23/26=a-kimo・21/24=nokotta-leg（2026-11-17 渋谷さん指示）。先出しで8本まとめて発行。",
+  "_warning": "このファイルは1回だけ実行すること。2回流すと同じクーポンがもう1組できる。",
+  "_price": "3商品ともBF準備表で50%OFF＝クーポンはセール価格からさらに99%OFF（0円にはならない）。",
+  "notify_line": false,
+  "issue_dates": [
+    "2026-11-17"
+  ],
+  "coupons": [
+    {
+      "coupon_name": "早起きさんに嬉しい♪50枚限定日替わり99%OFFクーポン",
+      "coupon_code_prefix": "F99-19",
+      "discount_type": 2,
+      "discount_factor": 99,
+      "condition_type": "quantity",
+      "min_purchase_count": 1,
+      "min_purchase_amount": 0,
+      "issue_count": 50,
+      "item_type": 1,
+      "start_date": "2026-11-19T06:00:00+09:00",
+      "end_date": "2026-11-19T23:59:59+09:00",
+      "start_buffer_minutes": 0,
+      "member_avail_max_count": 1,
+      "combine_flag": 0,
+      "display_flag": 1,
+      "purchase_history_type": 0,
+      "target_item_urls": [
+        "nokotta-asikubi"
+      ]
+    },
+    {
+      "coupon_name": "早起きさんに嬉しい♪50枚限定日替わり99%OFFクーポン",
+      "coupon_code_prefix": "F99-20",
+      "discount_type": 2,
+      "discount_factor": 99,
+      "condition_type": "quantity",
+      "min_purchase_count": 1,
+      "min_purchase_amount": 0,
+      "issue_count": 50,
+      "item_type": 1,
+      "start_date": "2026-11-20T06:00:00+09:00",
+      "end_date": "2026-11-20T23:59:59+09:00",
+      "start_buffer_minutes": 0,
+      "member_avail_max_count": 1,
+      "combine_flag": 0,
+      "display_flag": 1,
+      "purchase_history_type": 0,
+      "target_item_urls": [
+        "a-kimo"
+      ]
+    },
+    {
+      "coupon_name": "早起きさんに嬉しい♪50枚限定日替わり99%OFFクーポン",
+      "coupon_code_prefix": "F99-21",
+      "discount_type": 2,
+      "discount_factor": 99,
+      "condition_type": "quantity",
+      "min_purchase_count": 1,
+      "min_purchase_amount": 0,
+      "issue_count": 50,
+      "item_type": 1,
+      "start_date": "2026-11-21T06:00:00+09:00",
+      "end_date": "2026-11-21T23:59:59+09:00",
+      "start_buffer_minutes": 0,
+      "member_avail_max_count": 1,
+      "combine_flag": 0,
+      "display_flag": 1,
+      "purchase_history_type": 0,
+      "target_item_urls": [
+        "nokotta-leg"
+      ]
+    },
+    {
+      "coupon_name": "早起きさんに嬉しい♪50枚限定日替わり99%OFFクーポン",
+      "coupon_code_prefix": "F99-22",
+      "discount_type": 2,
+      "discount_factor": 99,
+      "condition_type": "quantity",
+      "min_purchase_count": 1,
+      "min_purchase_amount": 0,
+      "issue_count": 50,
+      "item_type": 1,
+      "start_date": "2026-11-22T06:00:00+09:00",
+      "end_date": "2026-11-22T23:59:59+09:00",
+      "start_buffer_minutes": 0,
+      "member_avail_max_count": 1,
+      "combine_flag": 0,
+      "display_flag": 1,
+      "purchase_history_type": 0,
+      "target_item_urls": [
+        "nokotta-asikubi"
+      ]
+    },
+    {
+      "coupon_name": "早起きさんに嬉しい♪50枚限定日替わり99%OFFクーポン",
+      "coupon_code_prefix": "F99-23",
+      "discount_type": 2,
+      "discount_factor": 99,
+      "condition_type": "quantity",
+      "min_purchase_count": 1,
+      "min_purchase_amount": 0,
+      "issue_count": 50,
+      "item_type": 1,
+      "start_date": "2026-11-23T06:00:00+09:00",
+      "end_date": "2026-11-23T23:59:59+09:00",
+      "start_buffer_minutes": 0,
+      "member_avail_max_count": 1,
+      "combine_flag": 0,
+      "display_flag": 1,
+      "purchase_history_type": 0,
+      "target_item_urls": [
+        "a-kimo"
+      ]
+    },
+    {
+      "coupon_name": "早起きさんに嬉しい♪50枚限定日替わり99%OFFクーポン",
+      "coupon_code_prefix": "F99-24",
+      "discount_type": 2,
+      "discount_factor": 99,
+      "condition_type": "quantity",
+      "min_purchase_count": 1,
+      "min_purchase_amount": 0,
+      "issue_count": 50,
+      "item_type": 1,
+      "start_date": "2026-11-24T06:00:00+09:00",
+      "end_date": "2026-11-24T23:59:59+09:00",
+      "start_buffer_minutes": 0,
+      "member_avail_max_count": 1,
+      "combine_flag": 0,
+      "display_flag": 1,
+      "purchase_history_type": 0,
+      "target_item_urls": [
+        "nokotta-leg"
+      ]
+    },
+    {
+      "coupon_name": "早起きさんに嬉しい♪50枚限定日替わり99%OFFクーポン",
+      "coupon_code_prefix": "F99-25",
+      "discount_type": 2,
+      "discount_factor": 99,
+      "condition_type": "quantity",
+      "min_purchase_count": 1,
+      "min_purchase_amount": 0,
+      "issue_count": 50,
+      "item_type": 1,
+      "start_date": "2026-11-25T06:00:00+09:00",
+      "end_date": "2026-11-25T23:59:59+09:00",
+      "start_buffer_minutes": 0,
+      "member_avail_max_count": 1,
+      "combine_flag": 0,
+      "display_flag": 1,
+      "purchase_history_type": 0,
+      "target_item_urls": [
+        "nokotta-asikubi"
+      ]
+    },
+    {
+      "coupon_name": "早起きさんに嬉しい♪50枚限定日替わり99%OFFクーポン",
+      "coupon_code_prefix": "F99-26",
+      "discount_type": 2,
+      "discount_factor": 99,
+      "condition_type": "quantity",
+      "min_purchase_count": 1,
+      "min_purchase_amount": 0,
+      "issue_count": 50,
+      "item_type": 1,
+      "start_date": "2026-11-26T06:00:00+09:00",
+      "end_date": "2026-11-26T23:59:59+09:00",
+      "start_buffer_minutes": 0,
+      "member_avail_max_count": 1,
+      "combine_flag": 0,
+      "display_flag": 1,
+      "purchase_history_type": 0,
+      "target_item_urls": [
+        "a-kimo"
+      ]
+    }
+  ],
+  "_name": "クーポン名は渋谷さんの文言そのまま。【11/19限定】を頭に付けたら楽天の上限超え(COUPON_EE01-001 couponName.limit_over)で外した。日付は開始・終了日時で分かれる。さらに「♡」がinvalid_value(COUPON_EE01-002)で使えず、渋谷さんの選択で「♪」に変えた"
+}
