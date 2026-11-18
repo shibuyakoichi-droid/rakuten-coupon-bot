@@ -1,8 +1,8 @@
 {
-  "generation": 1,
-  "current_coupon_code": "HEFS-YTHF-BJJ2-6UWP",
-  "issued_at": "2026-11-17T11:00:06.763514+09:00",
-  "reissue_date": "2026-11-17",
+  "generation": 2,
+  "current_coupon_code": "XNPG-NKQI-RC56-C28B",
+  "issued_at": "2026-11-18T12:00:53.729883+09:00",
+  "reissue_date": "2026-11-18",
   "reissue_count_today": 1,
   "history": [
     {
@@ -11,7 +11,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WVRIRi1IRUZTLUJKSjItNlVXUA--&rt=",
       "issued_at": "2026-11-17T11:00:06.763514+09:00",
       "reason": "手動強制発行(--force-issue)"
+    },
+    {
+      "generation": 2,
+      "coupon_code": "XNPG-NKQI-RC56-C28B",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=TktRSS1YTlBHLVJDNTYtQzI4Qg--&rt=",
+      "issued_at": "2026-11-18T12:00:53.729883+09:00",
+      "reason": "残9枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WVRIRi1IRUZTLUJKSjItNlVXUA--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=TktRSS1YTlBHLVJDNTYtQzI4Qg--&rt="
 }
