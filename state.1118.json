@@ -1,9 +1,9 @@
 {
-  "generation": 2,
-  "current_coupon_code": "XNPG-NKQI-RC56-C28B",
-  "issued_at": "2026-11-18T12:00:53.729883+09:00",
+  "generation": 3,
+  "current_coupon_code": "TNZH-LQRJ-6KPU-MXZL",
+  "issued_at": "2026-11-18T17:45:40.080544+09:00",
   "reissue_date": "2026-11-18",
-  "reissue_count_today": 1,
+  "reissue_count_today": 2,
   "history": [
     {
       "generation": 1,
@@ -18,7 +18,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=TktRSS1YTlBHLVJDNTYtQzI4Qg--&rt=",
       "issued_at": "2026-11-18T12:00:53.729883+09:00",
       "reason": "残9枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 3,
+      "coupon_code": "TNZH-LQRJ-6KPU-MXZL",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=TFFSSi1UTlpILTZLUFUtTVhaTA--&rt=",
+      "issued_at": "2026-11-18T17:45:40.080544+09:00",
+      "reason": "残9枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=TktRSS1YTlBHLVJDNTYtQzI4Qg--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=TFFSSi1UTlpILTZLUFUtTVhaTA--&rt="
 }
