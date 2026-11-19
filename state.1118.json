@@ -1,9 +1,9 @@
 {
-  "generation": 5,
-  "current_coupon_code": "6OLI-BPCV-7ZJK-OCSE",
-  "issued_at": "2026-11-19T08:45:43.254034+09:00",
+  "generation": 6,
+  "current_coupon_code": "CDDB-AIPG-N5AC-QGTC",
+  "issued_at": "2026-11-19T15:15:35.170554+09:00",
   "reissue_date": "2026-11-19",
-  "reissue_count_today": 1,
+  "reissue_count_today": 2,
   "history": [
     {
       "generation": 1,
@@ -39,7 +39,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=QlBDVi02T0xJLTdaSkstT0NTRQ--&rt=",
       "issued_at": "2026-11-19T08:45:43.254034+09:00",
       "reason": "残8枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 6,
+      "coupon_code": "CDDB-AIPG-N5AC-QGTC",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=QUlQRy1DRERCLU41QUMtUUdUQw--&rt=",
+      "issued_at": "2026-11-19T15:15:35.170554+09:00",
+      "reason": "残10枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=QlBDVi02T0xJLTdaSkstT0NTRQ--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=QUlQRy1DRERCLU41QUMtUUdUQw--&rt="
 }
