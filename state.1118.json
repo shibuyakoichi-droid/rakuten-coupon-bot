@@ -1,9 +1,9 @@
 {
-  "generation": 8,
-  "current_coupon_code": "KAYQ-SFXL-AGZH-8RS7",
-  "issued_at": "2026-11-19T22:45:41.372177+09:00",
-  "reissue_date": "2026-11-19",
-  "reissue_count_today": 4,
+  "generation": 9,
+  "current_coupon_code": "GIJA-BFHK-VHDP-QTKK",
+  "issued_at": "2026-11-20T02:00:57.297429+09:00",
+  "reissue_date": "2026-11-20",
+  "reissue_count_today": 1,
   "history": [
     {
       "generation": 1,
@@ -60,7 +60,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=U0ZYTC1LQVlRLUFHWkgtOFJTNw--&rt=",
       "issued_at": "2026-11-19T22:45:41.372177+09:00",
       "reason": "残10枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 9,
+      "coupon_code": "GIJA-BFHK-VHDP-QTKK",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=QkZISy1HSUpBLVZIRFAtUVRLSw--&rt=",
+      "issued_at": "2026-11-20T02:00:57.297429+09:00",
+      "reason": "残10枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=U0ZYTC1LQVlRLUFHWkgtOFJTNw--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=QkZISy1HSUpBLVZIRFAtUVRLSw--&rt="
 }
