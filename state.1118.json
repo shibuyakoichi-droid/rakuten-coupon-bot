@@ -1,9 +1,9 @@
 {
-  "generation": 6,
-  "current_coupon_code": "CDDB-AIPG-N5AC-QGTC",
-  "issued_at": "2026-11-19T15:15:35.170554+09:00",
+  "generation": 7,
+  "current_coupon_code": "WYIZ-19OZ-7CYL-FMCA",
+  "issued_at": "2026-11-19T20:15:37.452149+09:00",
   "reissue_date": "2026-11-19",
-  "reissue_count_today": 2,
+  "reissue_count_today": 3,
   "history": [
     {
       "generation": 1,
@@ -46,7 +46,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=QUlQRy1DRERCLU41QUMtUUdUQw--&rt=",
       "issued_at": "2026-11-19T15:15:35.170554+09:00",
       "reason": "残10枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 7,
+      "coupon_code": "WYIZ-19OZ-7CYL-FMCA",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=MTlPWi1XWUlaLTdDWUwtRk1DQQ--&rt=",
+      "issued_at": "2026-11-19T20:15:37.452149+09:00",
+      "reason": "残0枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=QUlQRy1DRERCLU41QUMtUUdUQw--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=MTlPWi1XWUlaLTdDWUwtRk1DQQ--&rt="
 }
