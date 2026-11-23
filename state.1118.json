@@ -1,9 +1,9 @@
 {
-  "generation": 22,
-  "current_coupon_code": "HCEJ-I0LE-TGYY-L35Z",
-  "issued_at": "2026-11-23T09:00:52.898323+09:00",
+  "generation": 23,
+  "current_coupon_code": "RULJ-9JYT-5AVE-N4SU",
+  "issued_at": "2026-11-23T16:45:36.168091+09:00",
   "reissue_date": "2026-11-23",
-  "reissue_count_today": 1,
+  "reissue_count_today": 2,
   "history": [
     {
       "generation": 1,
@@ -158,7 +158,14 @@
       "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=STBMRS1IQ0VKLVRHWVktTDM1Wg--&rt=",
       "issued_at": "2026-11-23T09:00:52.898323+09:00",
       "reason": "残8枚（閾値10）で使い切り"
+    },
+    {
+      "generation": 23,
+      "coupon_code": "RULJ-9JYT-5AVE-N4SU",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=OUpZVC1SVUxKLTVBVkUtTjRTVQ--&rt=",
+      "issued_at": "2026-11-23T16:45:36.168091+09:00",
+      "reason": "残10枚（閾値10）で使い切り"
     }
   ],
-  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=STBMRS1IQ0VKLVRHWVktTDM1Wg--&rt="
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=OUpZVC1SVUxKLTVBVkUtTjRTVQ--&rt="
 }
