@@ -1,0 +1,17 @@
+{
+  "generation": 1,
+  "current_coupon_code": "6AAX-YDEV-DTO6-EXS7",
+  "issued_at": "2026-11-26T17:43:20.701130+09:00",
+  "reissue_date": "2026-11-26",
+  "reissue_count_today": 1,
+  "history": [
+    {
+      "generation": 1,
+      "coupon_code": "6AAX-YDEV-DTO6-EXS7",
+      "pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WURFVi02QUFYLURUTzYtRVhTNw--&rt=",
+      "issued_at": "2026-11-26T17:43:20.701130+09:00",
+      "reason": "手動強制発行(--force-issue)"
+    }
+  ],
+  "current_pc_get_url": "https://coupon.rakuten.co.jp/getCoupon?getkey=WURFVi02QUFYLURUTzYtRVhTNw--&rt="
+}
